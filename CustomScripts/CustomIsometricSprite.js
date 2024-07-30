@@ -1,5 +1,5 @@
 class CustomIsometricSprite extends Phaser.GameObjects.Container {
-    constructor(scene, ground, building, buildingOffsetX, buildingOffsetY, buildingScale, scale) {
+    constructor(scene, ground, building, buildingOffsetX, buildingOffsetY, buildingScale, scale = 1) {
         super(scene);
         this.scene = scene;
         

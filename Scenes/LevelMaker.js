@@ -34,6 +34,20 @@ class LevelMaker extends Phaser.Scene
         this.speechBubble1ScaleDuration = 500;
         this.speechBubbleSizeTweenEase = "Back.easeOut";
 
+        this.speechBubble2X = 700;
+        this.speechBubble2Y = this.scale.height / 4 * 2.5 - 450;
+        this.speechBubble2ScaleFrom = 0.1;
+        this.speechBubble2ScaleTo = 1.8;
+        this.speechBubble2ScaleDuration = 500;
+        this.speechBubble2SizeTweenEase = "Back.easeOut";
+
+        this.bubbleMoneyX = 1025;
+        this.bubbleMoneyY = 2100;
+        this.bubbleMoneyScaleFrom = 0.1;
+        this.bubbleMoneyScaleTo = 1;
+        this.bubbleMoneyScaleDuration = 500;
+        this.bubbleMoneySizeTweenEase = "Back.easeOut";
+
         this.pointerX = this.speechBubble1X + 500;
         this.pointerY = this.scale.height / 2;
         this.pointerScaleStart = 0.1;
@@ -42,6 +56,9 @@ class LevelMaker extends Phaser.Scene
         this.pointerScaleBackTo = 0.8;
         this.pointerScaleDuration = 600;
         this.pointerSizeTweenEase = "Back.easeOut";
+
+        this.moneyPanelX = this.scale.width / 2;
+        this.moneyPanelY = 650;
 
         // isometric sprites
         // Create a group for isometric tiles, this is only for decoration at the top of the screen
@@ -94,9 +111,10 @@ class LevelMaker extends Phaser.Scene
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
+
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
+        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "buildingSmallGrayA", 10, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
 
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
@@ -121,12 +139,16 @@ class LevelMaker extends Phaser.Scene
         this.add.image(900, 2040, "carYellowB").setScale(4);
         this.add.image(620, 750, "schoolBusB").setScale(4);
 
+        // interactive buildings
+
         // Create a semi black rectangle that covers the entire game screen
         this.createDarkLayer();
 
         // UI
         this.cat;
         this.bubbleSpeech1;
+        this.bubbleSpeech2;
+        this.bubbleMoney;
         this.pointer;
 
         // Create a UI layer
@@ -150,6 +172,25 @@ class LevelMaker extends Phaser.Scene
 
         // character
         this.createCat();
+
+        // money panel
+        this.moneyPanelSet = this.add.container(0, 0);
+
+        this.moneyPanel = this.add.image(this.moneyPanelX, this.moneyPanelY, "moneyPanel");
+        this.moneyPanelSet.add(this.moneyPanel)
+
+        this.moneyTotal = 0;
+
+        this.moneyIcon = this.add.image(250, this.moneyPanelY - 30, "moneyPlural").setScale(0.15);
+        this.moneyPanelSet.add(this.moneyIcon);
+
+        this.moneyLabel = this.add.text(this.moneyPanelX,
+                                        this.moneyPanelY - 70, 
+                                        "0", {font: "150px Arial", fill: "#ffffff"});
+        this.moneyLabel.setOrigin(0.5, 0);
+        this.moneyLabel.align = 'center';
+        this.moneyLabel.text = "$ " + this.moneyTotal;
+        this.moneyPanelSet.add(this.moneyLabel);
     }
 
     createIsometricTile(group, ground, building, buildingOffsetX, buildingOffsetY, buildingScale, scale) {
@@ -225,11 +266,14 @@ class LevelMaker extends Phaser.Scene
                         this.speechBubble1.setInteractive();
         
                         // Event listener to hide all elements when tapped
-                        this.input.on('pointerdown', () => {
+                        //this.input.on('pointerdown', () => {
+                        this.speechBubble1.on('pointerdown', () => {
                             this.darkOverlay.setVisible(false);
                             this.cat.setVisible(false);
                             this.speechBubble1.setVisible(false);
                             this.pointer.setVisible(false);  // Disable pointer interactions
+
+                            this.createMoneyBubble();
                         });
                     }
                 });
@@ -277,5 +321,12 @@ class LevelMaker extends Phaser.Scene
                 this.tweenPointerSizeDown(pointer);
             }
         });
+    }
+
+    createMoneyBubble()
+    {
+        // Create the TimerCircle
+        // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale, onCompleteGlowKey)
+        let timerCircle = new TimerCircle(this, this.bubbleMoneyX, this.bubbleMoneyY, 2, "speechBubbleMoney", "moneySingle", 0.5, "glow");
     }
 }
