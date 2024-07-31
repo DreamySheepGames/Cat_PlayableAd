@@ -31,7 +31,8 @@ class Load extends Phaser.Scene
         this.load.image("churchA", "assets/IsometricSprites/Buildings/church_a.png");
 
         // interactive building
-        this.load.image("buildingSmallGrayA", "assets/IsometricSprites/Buildings/building_small_gray_a.png");
+        this.load.image("buildingLevel1", "assets/IsometricSprites/Buildings/building_small_gray_a.png");
+        this.load.image("buildingLevel2", "assets/IsometricSprites/Buildings/building_tall_blue_a.png");
 
         // vegetation
         this.load.image("treeCommon01", "assets/IsometricSprites/Vegetation/tree_common_01.png");
@@ -47,12 +48,15 @@ class Load extends Phaser.Scene
         this.load.image("speechBubbleCircle", "assets/UI/speechBubbleCircle.png");
         this.load.image("speechBubbleMoney", "assets/UI/bubbleMoney.png");
 
-
         // money
         this.load.image("moneySingle", "assets/UI/moneySingle.png");
         this.load.image("moneyPlural", "assets/UI/moneyPlural.png");
         this.load.image("glow", "assets/UI/glow.png");
         this.load.image("moneyPanel", "assets/UI/moneyPanel.png");
+
+        // level up
+        this.load.image("levelUpArrow", "assets/UI/levelUpArrow.png");
+        this.load.image("hammer", "assets/UI/hammer.png");
 
 
         // json

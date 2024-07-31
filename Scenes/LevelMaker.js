@@ -42,11 +42,17 @@ class LevelMaker extends Phaser.Scene
         this.speechBubble2SizeTweenEase = "Back.easeOut";
 
         this.bubbleMoneyX = 1025;
-        this.bubbleMoneyY = 2100;
+        this.bubbleMoneyY = 2050;
+        this.bubbleMoney2X = 235;
+        this.bubbleMoney2Y = 1550;
+        this.bubbleMoney3X = 1030;
+        this.bubbleMoney3Y = 1150;
         this.bubbleMoneyScaleFrom = 0.1;
         this.bubbleMoneyScaleTo = 1;
         this.bubbleMoneyScaleDuration = 500;
         this.bubbleMoneySizeTweenEase = "Back.easeOut";
+        this.bubbleTimerDuration = 2;
+        this.moneyScale = 0.3;
 
         this.pointerX = this.speechBubble1X + 500;
         this.pointerY = this.scale.height / 2;
@@ -57,8 +63,50 @@ class LevelMaker extends Phaser.Scene
         this.pointerScaleDuration = 600;
         this.pointerSizeTweenEase = "Back.easeOut";
 
+        // money panel config
         this.moneyPanelX = this.scale.width / 2;
         this.moneyPanelY = 650;
+
+        // the icon in the panel
+        this.moneyIconX = 250;
+        this.moneyIconY = this.moneyPanelY - 30;
+        this.moneyIconScale = 0.15;
+
+        // the $
+        this.moneyUnitX = this.moneyPanelX - 250;
+        this.moneyUnitY = this.moneyPanelY - 70;
+
+        // the money player got
+        this.moneyLabelX = this.moneyPanelX + 150;
+        this.moneyLabelY = this.moneyPanelY - 70;
+
+        this.moneyFont = "150px Arial";
+        this.moneyFontColor = "#278664";
+
+        // interactable buildings
+        this.housePrice = 400;
+
+        this.hammerX = 100;
+        this.hammerY = 2000;
+        this.hammer2X = 700;
+        this.hammer2Y = 1600;
+        this.hammerScale = 0.8;
+        this.tweenHitAngle = 45;
+        this.tweenHitDuration = 200;
+        this.tweenHammerEase = "Linear"
+        this.vanishDuration = 100;
+
+        this.interBuilding1X = 1100;
+        this.interBuilding1Y = 2800;
+        this.interBuilding1Scale = 2;
+
+        this.interBuilding2X = 320;
+        this.interBuilding2Y = 2300;
+        this.interBuilding2Scale = 2;
+
+        this.interBuilding3X = 1120;
+        this.interBuilding3Y = 1900;
+        this.interBuilding3Scale = 2;
 
         // isometric sprites
         // Create a group for isometric tiles, this is only for decoration at the top of the screen
@@ -110,15 +158,15 @@ class LevelMaker extends Phaser.Scene
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
+        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
 
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "buildingSmallGrayA", 10, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
+        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
+        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
 
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "treeCommon01", 0, 0, 0.5, this.isometricTileInteractiveScale)
+        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
+        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "policeStationB", 10, -10, 0.5, this.isometricTileInteractiveScale)
         this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "waterTowerA", 10, -10, 0.5, this.isometricTileInteractiveScale)
 
@@ -134,12 +182,15 @@ class LevelMaker extends Phaser.Scene
                                  this.isometricTileInteractiveOffsetX, this.isometricTileInteractiveOffsetY                                             // grid offset parameters
         );
 
-        // vehicles
+        // vehicles and probs
         this.add.image(140, 850, "carWhiteA").setScale(4);
         this.add.image(900, 2040, "carYellowB").setScale(4);
         this.add.image(620, 750, "schoolBusB").setScale(4);
 
-        // interactive buildings
+        // interactable buildings
+        
+        //Buliding(scene, x, y, scale, level = 1)
+        this.interBuilding1 = new Building(this, this.interBuilding1X, this.interBuilding1Y, this.interBuilding1Scale, 1);
 
         // Create a semi black rectangle that covers the entire game screen
         this.createDarkLayer();
@@ -174,23 +225,83 @@ class LevelMaker extends Phaser.Scene
         this.createCat();
 
         // money panel
-        this.moneyPanelSet = this.add.container(0, 0);
+        this.createMoneyPanel();
+    }
 
-        this.moneyPanel = this.add.image(this.moneyPanelX, this.moneyPanelY, "moneyPanel");
-        this.moneyPanelSet.add(this.moneyPanel)
+    update()
+    {
+        this.checkBuilding2();
+        this.checkBuilding3();
+    }
 
-        this.moneyTotal = 0;
+    checkBuilding2()
+    {
+        if (this.moneyLabel.text >= 600 && this.isInterBuilding2 == undefined)
+        {
+            //Hammer(scene, x, y, scale, texture, tweenHitAngle, tweenHitDuration, tweenEase, vanishDuration)
+            let hammer = new Hammer(this, this.hammerX, this.hammerY, this.hammerScale, "hammer",
+                                    this.tweenHitAngle, this.tweenHitDuration, this.tweenHammerEase, 
+                                    this.vanishDuration);
+            hammer.hit();
 
-        this.moneyIcon = this.add.image(250, this.moneyPanelY - 30, "moneyPlural").setScale(0.15);
-        this.moneyPanelSet.add(this.moneyIcon);
+            this.isInterBuilding2 = true;
 
-        this.moneyLabel = this.add.text(this.moneyPanelX,
-                                        this.moneyPanelY - 70, 
-                                        "0", {font: "150px Arial", fill: "#ffffff"});
-        this.moneyLabel.setOrigin(0.5, 0);
-        this.moneyLabel.align = 'center';
-        this.moneyLabel.text = "$ " + this.moneyTotal;
-        this.moneyPanelSet.add(this.moneyLabel);
+            // create building 2 after hammer1 hit
+            this.time.delayedCall(this.tweenHitDuration * 2 + this.vanishDuration, () => {
+                this.moneyTotal -= this.housePrice;
+                this.moneyLabel.text = this.moneyTotal;
+
+                // Building(scene, x, y, scale, level = 1)
+                this.interBuilding2 = new Building(this, this.interBuilding2X, this.interBuilding2Y, this.interBuilding2Scale, 1);
+                // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey, mode = 1, building)
+                this.timerCircle2 = new TimerCircle(this, this.bubbleMoney2X, this.bubbleMoney2Y, 
+                                                1, "speechBubbleMoney", "moneySingle", this.moneyScale, "glow",
+                                                2,
+                                                this.interBuilding2
+                                                );
+
+                // pointer
+                this.pointer.x = this.bubbleMoney2X + 70;
+                this.pointer.y = this.bubbleMoney2Y + 80;
+                this.pointer.setVisible(true);
+            });
+            
+        }
+    }
+
+    checkBuilding3()
+    {
+        if (this.moneyLabel.text >= 600 && this.isInterBuilding3 == undefined && this.interBuilding2 != undefined && this.interBuilding2.level == 2)
+        {
+            //Hammer(scene, x, y, scale, texture, tweenHitAngle, tweenHitDuration, tweenEase, vanishDuration)
+            let hammer2 = new Hammer(this, this.hammer2X, this.hammer2Y, this.hammerScale, "hammer",
+                                    this.tweenHitAngle, this.tweenHitDuration, this.tweenHammerEase, 
+                                    this.vanishDuration);
+            hammer2.hit();
+            
+            this.isInterBuilding3 = true;
+
+            // create building 3 after hammer2 hit
+            this.time.delayedCall(this.tweenHitDuration * 2 + this.vanishDuration, () => {
+                this.moneyTotal -= this.housePrice;
+                this.moneyLabel.text = this.moneyTotal;
+
+                // Building(scene, x, y, scale, level = 1)
+                this.interBuilding3 = new Building(this, this.interBuilding3X, this.interBuilding3Y, this.interBuilding3Scale, 1);
+                // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey, mode = 1, building)
+                this.timerCircle3 = new TimerCircle(this, this.bubbleMoney3X, this.bubbleMoney3Y, 
+                                                1, "speechBubbleMoney", "moneySingle", this.moneyScale, "glow",
+                                                4,
+                                                this.interBuilding3
+                                                );
+                
+                // pointer
+                this.pointer.x = this.bubbleMoney3X + 70;
+                this.pointer.y = this.bubbleMoney3Y + 80;
+                this.pointer.setVisible(true);
+            });
+            
+        }
     }
 
     createIsometricTile(group, ground, building, buildingOffsetX, buildingOffsetY, buildingScale, scale) {
@@ -273,6 +384,8 @@ class LevelMaker extends Phaser.Scene
                             this.speechBubble1.setVisible(false);
                             this.pointer.setVisible(false);  // Disable pointer interactions
 
+                            this.moneyPanelSet.setVisible(true);
+
                             this.createMoneyBubble();
                         });
                     }
@@ -284,7 +397,6 @@ class LevelMaker extends Phaser.Scene
     createPointer()
     {
         this.pointer = this.add.image(this.pointerX, this.pointerY, "pointer").setScale(this.pointerScaleStart);
-        this.uiLayer.add(this.pointer);
 
         this.tweens.add({
             targets: this.pointer,
@@ -326,7 +438,49 @@ class LevelMaker extends Phaser.Scene
     createMoneyBubble()
     {
         // Create the TimerCircle
-        // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale, onCompleteGlowKey)
-        let timerCircle = new TimerCircle(this, this.bubbleMoneyX, this.bubbleMoneyY, 2, "speechBubbleMoney", "moneySingle", 0.5, "glow");
+        // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale, onCompleteGlowKey, mode)
+        this.timerCircle = new TimerCircle(this, this.bubbleMoneyX, this.bubbleMoneyY, 
+                                        this.bubbleTimerDuration, "speechBubbleMoney", "moneySingle", this.moneyScale, "glow",
+                                        1,
+                                        this.interBuilding1
+                                        );
+        this.pointer.setVisible(true);
+        this.pointer.x = this.bubbleMoneyX + 70;
+        this.pointer.y = this.bubbleMoneyY + 80;
+        this.pointer.setDepth(1);
+    }
+
+    createMoneyPanel()
+    {
+        this.moneyTotal = 0;
+
+        this.moneyPanelSet = this.add.container(0, 0);
+
+        // the panel sprite
+        this.moneyPanel = this.add.image(this.moneyPanelX, this.moneyPanelY, "moneyPanel");
+        this.moneyPanelSet.add(this.moneyPanel)      
+
+        // add the icon
+        this.moneyIcon = this.add.image(this.moneyIconX, this.moneyIconY, "moneyPlural").setScale(this.moneyIconScale);
+        this.moneyPanelSet.add(this.moneyIcon);
+
+        // add the $ text
+        this.moneyUnitLabel = this.add.text(this.moneyUnitX,
+                                        this.moneyUnitY, 
+                                        "$", {font: this.moneyFont, fill: this.moneyFontColor});
+        this.moneyUnitLabel.setOrigin(0.5, 0);
+        this.moneyUnitLabel.align = 'center';
+        this.moneyPanelSet.add(this.moneyUnitLabel);
+
+        // add the text that shows the money player got
+        this.moneyLabel = this.add.text(this.moneyLabelX,
+                                        this.moneyLabelY, 
+                                        "0", {font: this.moneyFont, fill: this.moneyFontColor});
+        this.moneyLabel.setOrigin(0.5, 0);
+        this.moneyLabel.align = 'center';
+        this.moneyLabel.text = this.moneyTotal;
+        this.moneyPanelSet.add(this.moneyLabel);
+
+        this.moneyPanelSet.setVisible(false);
     }
 }

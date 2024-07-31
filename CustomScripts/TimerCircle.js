@@ -1,5 +1,5 @@
 class TimerCircle extends Phaser.GameObjects.Container {
-    constructor(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey) {
+    constructor(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey, mode = 1, building) {
         super(scene, x, y);
 
         this.scene = scene;
@@ -9,6 +9,8 @@ class TimerCircle extends Phaser.GameObjects.Container {
         this.onCompleteSpriteKey = onCompleteSpriteKey;
         this.onCompleteSpriteScale = onCompleteSpriteScale;
         this.onCompleteGlowKey = onCompleteGlowKey;
+        this.mode = mode;
+        this.building = building;
 
         // Create the sprite
         this.sprite = scene.add.sprite(0, 0, spriteKey);
@@ -48,22 +50,55 @@ class TimerCircle extends Phaser.GameObjects.Container {
 
         // Check if the timer has completed
         if (this.elapsed >= this.duration) {
-            // Add the onComplete sprite
-            //let money = this.scene.add.sprite(this.x, this.y, this.onCompleteSpriteKey).setScale(0.1);
-            let money = new Money(this.scene, this.x, this.y, this.onCompleteSpriteKey, this.onCompleteGlowKey, 0.1, 0.3, 0.1, 1);
-            // this.scene.tweens.add({
-            //     targets: money,
-            //     scale: this.onCompleteSpriteScale,
-            //     duration: 300,
-            //     ease: "Back.easeOut",
-            //     onComplete: () => {
-            //         // Optionally, add any other logic here after the tween completes
-            //     }
-            // });
+            switch(this.mode) {
+                case 1:
+                    // Add the onComplete sprite
+                    let money = new Money(this.scene, this.x, this.y, 
+                                            this.onCompleteSpriteKey, this.onCompleteGlowKey, 
+                                            0.1, this.onCompleteSpriteScale, 
+                                            0.1, 1, 
+                                            1,
+                                            this.building
+                                        );
+                    break;
+
+                case 2:
+                    let money2 = new Money(this.scene, this.x, this.y, 
+                                            this.onCompleteSpriteKey, this.onCompleteGlowKey, 
+                                            0.1, this.onCompleteSpriteScale, 
+                                            0.1, 1, 
+                                            2,
+                                            this.building
+                                        );
+                    break;
+
+                case 3:
+                    this.building.bounceBuilding();
+
+                    this.scene.moneyTotal = this.scene.moneyTotal + 100;
+                    this.scene.moneyLabel.text = this.scene.moneyTotal;
+
+                    // create TimerCircle mode 3
+                    let timerCircle3 = new TimerCircle(this.scene, this.x, this.y, 1, "speechBubbleMoney", "moneySingle", this.scene.moneyScale, "glow", 3, this.building);
+                    break;
+
+                // this is for building 3
+                case 4:
+                    let money3 = new Money(this.scene, this.x, this.y, 
+                                            this.onCompleteSpriteKey, this.onCompleteGlowKey, 
+                                            0.1, this.onCompleteSpriteScale, 
+                                            0.1, 1, 
+                                            4,
+                                            this.building
+                                        );
+                    break;
+            }
 
             // Destroy the timer circle and its sprite
             this.timerEvent.remove(false);
             this.destroy();
         }
     }
+
+    
 }

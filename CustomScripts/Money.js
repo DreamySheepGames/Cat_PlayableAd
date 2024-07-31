@@ -1,8 +1,19 @@
 class Money extends Phaser.GameObjects.Container {
-    constructor(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1) {
+    constructor(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1, mode = 1, building) {
         super(scene, x, y);
 
         this.scene = scene;
+        this.mode = mode;
+        this.sendMoneyToX = this.scene.moneyIconX;
+        this.sendMoneyToY = this.scene.moneyIconY;
+        this.scaleValue = scaleTo;
+        this.building = building;
+
+        // config paramater
+        this.spawnMoneySpriteRate = 30;
+        this.moneySpriteTweenDuration = 700;
+        this.levelUpArrowScaleFrom = 0.1;
+        this.levelUpArrowScaleTo = 0.2;
 
         // Create the glow sprite and set it to spin
         this.glow = scene.add.sprite(0, 0, glowKey);
@@ -28,9 +39,6 @@ class Money extends Phaser.GameObjects.Container {
             scale: scaleTo,
             duration: 300,
             ease: "Back.easeOut",
-            onComplete: () => {
-                // Optionally, add any other logic here after the tween completes
-            }
         });
 
         this.scene.tweens.add({
@@ -38,19 +46,124 @@ class Money extends Phaser.GameObjects.Container {
             scale: glowScaleTo,
             duration: 300,
             ease: "Back.easeOut",
-            onComplete: () => {
-                // Optionally, add any other logic here after the tween completes
-            }
         });
 
         // Make the money sprite interactive
         this.money.setInteractive();
-        this.money.on('pointerdown', () => {
-            // Placeholder for the action when the money sprite is tapped
-            console.log("Money tapped!");
-        });
-
         // Add this container to the scene
         scene.add.existing(this);
+
+        // Ensure `sendMoney` is properly bound
+        this.money.on('pointerdown', () => {
+            switch (this.mode) {
+                case 1:
+                    // spawn 5 money sprite
+                    for (let i = 0; i < 5; i++) {
+                        this.scene.time.delayedCall(i * this.spawnMoneySpriteRate, () => {
+                            this.sendMoney(scene);
+                        });
+                    }
+
+                    // update money text
+                    this.scene.moneyTotal = this.scene.moneyTotal + 100;
+                    this.scene.moneyLabel.text = this.scene.moneyTotal;
+
+                    // create time circle with mode = 2
+                    // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey, mode = 1, building)
+                    let timerCircle = new TimerCircle(scene, x, y, 2, "speechBubbleMoney", "moneySingle", this.scene.moneyScale, "glow", 2, this.building);
+                    this.destroy();
+                    break;
+
+                case 2:
+                    // spawn 5 money sprite
+                    for (let i = 0; i < 5; i++) {
+                        this.scene.time.delayedCall(i * this.spawnMoneySpriteRate, () => {
+                            this.sendMoney(scene);
+                        });
+                    }
+
+                    // update money text
+                    this.scene.moneyTotal = this.scene.moneyTotal + 100;
+                    this.scene.moneyLabel.text = this.scene.moneyTotal;
+                    this.scene.pointer.setVisible(false);
+
+                    // add the level up sprite
+                    // Money(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1, mode)
+                    let levelUpArrow = new Money(this.scene, this.x, this.y, "levelUpArrow", 
+                                                glowKey, this.levelUpArrowScaleFrom, this.levelUpArrowScaleTo, 
+                                                glowScale, glowScaleTo, 
+                                                3,
+                                                this.building
+                                            );
+
+                    this.destroy();
+                    break;
+
+                case 3:
+                    this.building.levelUp();
+
+                    // create TimerCircle mode 3
+                    let timerCircle3 = new TimerCircle(this.scene, x, y, 1, "speechBubbleMoney", "moneySingle", this.scene.moneyScale, "glow", 3, this.building);
+
+                    // pointer
+                    //this.scene.pointer.setVisible(false);
+
+                    this.destroy();
+                    break;
+
+                // case 4 and 5 are for the 3rd building
+                case 4:
+                    // spawn 5 money sprite
+                    for (let i = 0; i < 5; i++) {
+                        this.scene.time.delayedCall(i * this.spawnMoneySpriteRate, () => {
+                            this.sendMoney(scene);
+                        });
+                    }
+
+                    // update money text
+                    this.scene.moneyTotal = this.scene.moneyTotal + 100;
+                    this.scene.moneyLabel.text = this.scene.moneyTotal;
+                    this.scene.pointer.setVisible(false);
+
+                    // add the level up sprite
+                    // Money(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1, mode)
+                    let levelUpArrow2 = new Money(this.scene, this.x, this.y, "levelUpArrow", 
+                                                glowKey, this.levelUpArrowScaleFrom, this.levelUpArrowScaleTo, 
+                                                glowScale, glowScaleTo, 
+                                                5,
+                                                this.building
+                                            );
+
+                    this.destroy();
+                    break;
+                
+                case 5:
+                    this.building.levelUp();
+                    // pointer
+                    this.scene.pointer.setVisible(false);
+                    
+                    this.destroy();
+                    break;
+            }
+        });
+    }
+
+    sendMoney = (scene) => {
+        if (scene) {
+            let moneyToSend = scene.add.image(this.x, this.y, "moneySingle").setScale(this.scaleValue);
+
+            scene.tweens.add({
+                targets: moneyToSend,
+                x: this.sendMoneyToX,
+                y: this.sendMoneyToY,
+                duration: this.moneySpriteTweenDuration,
+                ease: "Linear",
+                onComplete: () => {
+                    moneyToSend.destroy();
+                }
+            });
+        } else {
+            console.error("Scene is not defined.");
+        }
     }
 }
