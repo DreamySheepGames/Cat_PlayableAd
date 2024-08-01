@@ -12,6 +12,12 @@ class TimerCircle extends Phaser.GameObjects.Container {
         this.mode = mode;
         this.building = building;
 
+        // audio
+        this.autoCollectSound = this.scene.sound.add("audio_autoCollectMoney", {
+            loop: false,
+            volume: 0.5 // Adjust volume as needed
+        });
+
         // Create the sprite
         this.sprite = scene.add.sprite(0, 0, spriteKey);
         this.add(this.sprite);
@@ -74,13 +80,17 @@ class TimerCircle extends Phaser.GameObjects.Container {
 
                 case 3:
                     this.building.bounceBuilding();
+                        this.autoCollectSound.play();
 
                         // Math.floor(Math.random() * 4) + 4 generates a random number between 4 and 7
                         // Math.random returns [0, 1), * 4 we get [0, 4), floor it we get from 0 to 3, + 4 we get [4, 8) or 4 to 7 
                         // Get the above and multiple by 50, we can cenerate a random amount between 200 and 350, divisible by 50
-                        let randomAmount = (Math.floor(Math.random() * 4) + 4) * 50
-                        this.scene.moneyTotal += randomAmount;
-                        this.scene.moneyLabel.text = this.scene.moneyTotal;
+                        if (this.scene.moneyTotal < 9999)      // we also need to set a threshold
+                        {
+                            let randomAmount = (Math.floor(Math.random() * 4) + 4) * 50
+                            this.scene.moneyTotal += randomAmount;
+                            this.scene.moneyLabel.text = this.scene.moneyTotal;
+                        }
 
                         // create TimerCircle mode 3 will create itself
                         let timerCircle3 = new TimerCircle(this.scene, this.x, this.y, 1, "speechBubbleMoney", "moneySingle", this.scene.moneyScale, "glow", 3, this.building);

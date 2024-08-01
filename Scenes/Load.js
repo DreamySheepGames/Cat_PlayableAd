@@ -53,10 +53,28 @@ class Load extends Phaser.Scene
         this.load.image("moneyPlural", "assets/UI/moneyPlural.png");
         this.load.image("glow", "assets/UI/glow.png");
         this.load.image("moneyPanel", "assets/UI/moneyPanel.png");
+        this.load.image("singleDollar", "assets/UI/singleDollar.png");
 
         // level up
         this.load.image("levelUpArrow", "assets/UI/levelUpArrow.png");
         this.load.image("hammer", "assets/UI/hammer.png");
+
+        // particle
+        this.load.image("moneySingleSmall", "assets/UI/moneySingleSmall.png");
+        this.load.image("star", "assets/UI/star.png");
+        this.load.image("dust", "assets/UI/dust.png");
+        this.load.image("party1", "assets/UI/party1.png");
+        this.load.image("party2", "assets/UI/party2.png");
+        this.load.image("lightColumn", "assets/UI/lightColumn.png");
+
+        // sound
+        this.load.audio("audio_bgTheme", "assets/Audio/BGTheme.ogg");
+        this.load.audio("audio_autoCollectMoney", "assets/Audio/autoCollectMoney.ogg");
+        this.load.audio("audio_building", "assets/Audio/building.ogg");
+        this.load.audio("audio_moneyCollect", "assets/Audio/moneyCollect.ogg");
+        this.load.audio("audio_upgrade", "assets/Audio/upgrade.ogg");
+        this.load.audio("audio_winning", "assets/Audio/winning.ogg");
+        this.load.audio("audio_pop", "assets/Audio/pop.ogg");
 
 
         // json

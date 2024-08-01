@@ -88,7 +88,7 @@ class LevelMaker extends Phaser.Scene
 
         this.hammerX = 100;
         this.hammerY = 2000;
-        this.hammer2X = 700;
+        this.hammer2X = 800;
         this.hammer2Y = 1600;
         this.hammerScale = 0.8;
         this.tweenHitAngle = 45;
@@ -107,6 +107,18 @@ class LevelMaker extends Phaser.Scene
         this.interBuilding3X = 1120;
         this.interBuilding3Y = 1900;
         this.interBuilding3Scale = 2;
+
+        // audio
+        this.bgTheme = this.sound.add("audio_bgTheme", {
+            loop: true,
+            volume: 1 // Adjust volume as needed
+        });
+        this.bgTheme.play();
+
+        this.winningSound = this.sound.add("audio_winning", {
+            loop: false,
+            volume: 1 // Adjust volume as needed
+        });
 
         // isometric sprites
         // Create a group for isometric tiles, this is only for decoration at the top of the screen
@@ -499,20 +511,28 @@ class LevelMaker extends Phaser.Scene
 
     createCatAtTheEnd()
     {
+        // audio
+        this.winningSound.play();
+
         this.moneyPanelSet.setVisible(false);
 
         this.darkOverlay.setVisible(true);
         this.darkOverlay.setDepth(1);
+
+        // particle rain
+        this.createRain();
 
         this.gameLogo.x = this.scale.width / 2;
         Align.scaleToGameW(this.gameLogo, 0.3)
 
         this.downloadBtn.x = this.scale.width / 2;
         this.downloadBtn.y = this.scale.height - this.downloadBtnY;
+        this.downloadBtn.setScale(1.3);
 
         this.pointer.setVisible(true);
         this.pointer.x = this.downloadBtn.x + 220;
         this.pointer.y = this.downloadBtn.y + 70;
+        this.pointer.setScale(this.pointerScaleTo * 1.5)
         
         // create and tween the cat
         this.cat.x = this.catX;
@@ -540,5 +560,56 @@ class LevelMaker extends Phaser.Scene
                 });
             }
         });
+    }
+
+    createRain()
+    {
+        this.add.particles(0, -200, "star", {
+            x: { min: 0, max: this.scale.width},
+            quantity: 1,
+            alpha: { start: 0.8, end: 0.1 },
+            scale: { min: 0.1, max: 0.8 },
+            blendMode: Phaser.BlendModes.NORMAL,
+            lifespan: 3500,
+            gravityY: 1000,
+            frequency: 100,
+        });
+
+        this.add.particles(0, -200, "singleDollar", {
+            x: { min: 0, max: this.scale.width},
+            quantity: 1,
+            alpha: { start: 0.8, end: 0.1 },
+            scale: { min: 0.1, max: 1.5 },
+            rotate: { min: 0, max: 360 },
+            blendMode: Phaser.BlendModes.NORMAL,
+            lifespan: 3500,
+            gravityY: 1000,
+            frequency: 100,
+        });
+
+        this.add.particles(0, -200, "party1", {
+            x: { min: 0, max: this.scale.width},
+            quantity: 1,
+            alpha: { start: 0.8, end: 0.1 },
+            scale: { min: 0.1, max: 3 },
+            rotate: { min: 0, max: 360 },
+            blendMode: Phaser.BlendModes.NORMAL,
+            lifespan: 3500,
+            gravityY: 1000,
+            frequency: 100,
+        });
+
+        this.add.particles(0, -200, "party2", {
+            x: { min: 0, max: this.scale.width},
+            quantity: 1,
+            alpha: { start: 0.8, end: 0.1 },
+            scale: { min: 0.1, max: 3 },
+            rotate: { min: 0, max: 360 },
+            blendMode: Phaser.BlendModes.NORMAL,
+            lifespan: 3500,
+            gravityY: 1000,
+            frequency: 100,
+        });
+
     }
 }

@@ -4,7 +4,7 @@ class Money extends Phaser.GameObjects.Container {
             console.error("Scene is not defined.");
             return;
         }
-        
+
         super(scene, x, y);
 
         this.scene = scene;
@@ -19,6 +19,20 @@ class Money extends Phaser.GameObjects.Container {
         this.moneySpriteTweenDuration = 700;
         this.levelUpArrowScaleFrom = 0.1;
         this.levelUpArrowScaleTo = 0.2;
+
+        // audio
+        this.popSound = this.scene.sound.add("audio_pop", {
+            loop: false,
+            volume: 1 // Adjust volume as needed
+        });
+
+        if (mode != 3 && mode != 5)
+            this.popSound.play();
+
+        this.collectSound = this.scene.sound.add("audio_moneyCollect", {
+            loop: false,
+            volume: 0.1 // Adjust volume as needed
+        });
 
         // Create the glow sprite and set it to spin
         this.glow = scene.add.sprite(0, 0, glowKey);
@@ -62,6 +76,8 @@ class Money extends Phaser.GameObjects.Container {
         this.money.on('pointerdown', () => {
             switch (this.mode) {
                 case 1:
+                    this.collectSound.play();
+
                     // spawn 5 money sprite
                     for (let i = 0; i < 5; i++) {
                         this.scene.time.delayedCall(i * this.spawnMoneySpriteRate, () => {
@@ -80,6 +96,8 @@ class Money extends Phaser.GameObjects.Container {
                     break;
 
                 case 2:
+                    this.collectSound.play();
+
                     // spawn 5 money sprite
                     for (let i = 0; i < 5; i++) {
                         this.scene.time.delayedCall(i * this.spawnMoneySpriteRate, () => {
@@ -118,6 +136,8 @@ class Money extends Phaser.GameObjects.Container {
 
                 // case 4 and 5 are for the 3rd building
                 case 4:
+                    this.collectSound.play();
+
                     // spawn 5 money sprite
                     for (let i = 0; i < 5; i++) {
                         this.scene.time.delayedCall(i * this.spawnMoneySpriteRate, () => {
