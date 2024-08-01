@@ -44,7 +44,7 @@ class Load extends Phaser.Scene
 
         // bubble speech
         this.load.image("speechBubble1", "assets/UI/speech_bubble_1.png");
-        this.load.image("speechBubble1", "assets/UI/speech_bubble_2.png");
+        this.load.image("speechBubble2", "assets/UI/speech_bubble_2.png");
         this.load.image("speechBubbleCircle", "assets/UI/speechBubbleCircle.png");
         this.load.image("speechBubbleMoney", "assets/UI/bubbleMoney.png");
 

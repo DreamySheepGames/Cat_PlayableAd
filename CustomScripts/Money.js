@@ -1,5 +1,10 @@
 class Money extends Phaser.GameObjects.Container {
     constructor(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1, mode = 1, building) {
+        if (!scene) {
+            console.error("Scene is not defined.");
+            return;
+        }
+        
         super(scene, x, y);
 
         this.scene = scene;
@@ -85,7 +90,6 @@ class Money extends Phaser.GameObjects.Container {
                     // update money text
                     this.scene.moneyTotal = this.scene.moneyTotal + 100;
                     this.scene.moneyLabel.text = this.scene.moneyTotal;
-                    this.scene.pointer.setVisible(false);
 
                     // add the level up sprite
                     // Money(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1, mode)
@@ -100,6 +104,7 @@ class Money extends Phaser.GameObjects.Container {
                     break;
 
                 case 3:
+                    this.scene.pointer.setVisible(false);
                     this.building.levelUp();
 
                     // create TimerCircle mode 3
@@ -123,7 +128,6 @@ class Money extends Phaser.GameObjects.Container {
                     // update money text
                     this.scene.moneyTotal = this.scene.moneyTotal + 100;
                     this.scene.moneyLabel.text = this.scene.moneyTotal;
-                    this.scene.pointer.setVisible(false);
 
                     // add the level up sprite
                     // Money(scene, x, y, spriteKey, glowKey, scale = 1, scaleTo = 1, glowScale = 1, glowScaleTo = 1, mode)
@@ -139,8 +143,12 @@ class Money extends Phaser.GameObjects.Container {
                 
                 case 5:
                     this.building.levelUp();
+
                     // pointer
                     this.scene.pointer.setVisible(false);
+
+                    // turn off all the timer circle
+                    this.scene.turnOffAllTimerCircle();
                     
                     this.destroy();
                     break;

@@ -49,7 +49,7 @@ class TimerCircle extends Phaser.GameObjects.Container {
         this.timerGraphics.strokePath();
 
         // Check if the timer has completed
-        if (this.elapsed >= this.duration) {
+        if (this.elapsed >= this.duration && this.scene != undefined) {
             switch(this.mode) {
                 case 1:
                     // Add the onComplete sprite
@@ -75,11 +75,17 @@ class TimerCircle extends Phaser.GameObjects.Container {
                 case 3:
                     this.building.bounceBuilding();
 
-                    this.scene.moneyTotal = this.scene.moneyTotal + 100;
-                    this.scene.moneyLabel.text = this.scene.moneyTotal;
+                        // Math.floor(Math.random() * 4) + 4 generates a random number between 4 and 7
+                        // Math.random returns [0, 1), * 4 we get [0, 4), floor it we get from 0 to 3, + 4 we get [4, 8) or 4 to 7 
+                        // Get the above and multiple by 50, we can cenerate a random amount between 200 and 350, divisible by 50
+                        let randomAmount = (Math.floor(Math.random() * 4) + 4) * 50
+                        this.scene.moneyTotal += randomAmount;
+                        this.scene.moneyLabel.text = this.scene.moneyTotal;
 
-                    // create TimerCircle mode 3
-                    let timerCircle3 = new TimerCircle(this.scene, this.x, this.y, 1, "speechBubbleMoney", "moneySingle", this.scene.moneyScale, "glow", 3, this.building);
+                        // create TimerCircle mode 3 will create itself
+                        let timerCircle3 = new TimerCircle(this.scene, this.x, this.y, 1, "speechBubbleMoney", "moneySingle", this.scene.moneyScale, "glow", 3, this.building);
+                        this.scene.timerCircleGroup.add(timerCircle3);
+
                     break;
 
                 // this is for building 3
@@ -99,6 +105,4 @@ class TimerCircle extends Phaser.GameObjects.Container {
             this.destroy();
         }
     }
-
-    
 }

@@ -207,19 +207,25 @@ class LevelMaker extends Phaser.Scene
 
         // Add UI elements to the UI layer
         // Game logo
-        let gameLogo = this.add.image(this.gameLogoX, this.gameLogoY, "gameLogo");
-        gameLogo.setScale(this.gameLogoScale);
-        Align.scaleToGameW(gameLogo, 0.2)
-        this.uiLayer.add(gameLogo);
+        this.gameLogo = this.add.image(this.gameLogoX, this.gameLogoY, "gameLogo");
+        //this.gameLogo.setScale(this.gameLogoScale);
+        Align.scaleToGameW(this.gameLogo, 0.2)
+        this.uiLayer.add(this.gameLogo);
 
         // buttons
-        const downloadBtn = new CustomButton(this, this.downloadBtnX, this.downloadBtnY, "button", "buttonPressed", 
+        this.downloadBtn = new CustomButton(this, this.downloadBtnX, this.downloadBtnY, "button", "buttonPressed", 
                                             this.downloadBtnText, this.downloadBtnFontSize, this.downloadBtnTextYOffset, this.downloadBtnScale);
 
-        downloadBtn.on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => {
+        this.downloadBtn.on(Phaser.Input.Events.GAMEOBJECT_POINTER_DOWN, () => {
             window.open(this.linkGame, "_blank"); ;
         })
-        this.uiLayer.add(downloadBtn);
+        this.uiLayer.add(this.downloadBtn);
+
+        // 3 timer bubble for 3 buildings
+        this.timerCircleGroup = this.add.group();
+        this.timerCircle;
+        this.timerCircle2;
+        this.timerCircle3;
 
         // character
         this.createCat();
@@ -236,7 +242,7 @@ class LevelMaker extends Phaser.Scene
 
     checkBuilding2()
     {
-        if (this.moneyLabel.text >= 600 && this.isInterBuilding2 == undefined)
+        if (this.isInterBuilding2 == undefined && this.moneyLabel.text >= 600)
         {
             //Hammer(scene, x, y, scale, texture, tweenHitAngle, tweenHitDuration, tweenEase, vanishDuration)
             let hammer = new Hammer(this, this.hammerX, this.hammerY, this.hammerScale, "hammer",
@@ -271,7 +277,7 @@ class LevelMaker extends Phaser.Scene
 
     checkBuilding3()
     {
-        if (this.moneyLabel.text >= 600 && this.isInterBuilding3 == undefined && this.interBuilding2 != undefined && this.interBuilding2.level == 2)
+        if (this.isInterBuilding3 == undefined && this.moneyLabel.text >= 600 && this.interBuilding2 != undefined && this.interBuilding2.level == 2)
         {
             //Hammer(scene, x, y, scale, texture, tweenHitAngle, tweenHitDuration, tweenEase, vanishDuration)
             let hammer2 = new Hammer(this, this.hammer2X, this.hammer2Y, this.hammerScale, "hammer",
@@ -482,5 +488,57 @@ class LevelMaker extends Phaser.Scene
         this.moneyPanelSet.add(this.moneyLabel);
 
         this.moneyPanelSet.setVisible(false);
+    }
+
+    turnOffAllTimerCircle()
+    {
+        this.timerCircleGroup.clear(true, true);
+
+        this.createCatAtTheEnd()
+    }
+
+    createCatAtTheEnd()
+    {
+        this.moneyPanelSet.setVisible(false);
+
+        this.darkOverlay.setVisible(true);
+        this.darkOverlay.setDepth(1);
+
+        this.gameLogo.x = this.scale.width / 2;
+        Align.scaleToGameW(this.gameLogo, 0.3)
+
+        this.downloadBtn.x = this.scale.width / 2;
+        this.downloadBtn.y = this.scale.height - this.downloadBtnY;
+
+        this.pointer.setVisible(true);
+        this.pointer.x = this.downloadBtn.x + 220;
+        this.pointer.y = this.downloadBtn.y + 70;
+        
+        // create and tween the cat
+        this.cat.x = this.catX;
+        this.cat.y = this.catY;
+        this.cat.setVisible(true);
+
+        this.uiLayer.setDepth(1);
+
+        this.tweens.add({
+            targets: this.cat,
+            x: this.catTweenToX,
+            duration: this.tweenCatDuration,
+            ease: this.tweenCatEase,
+            repeat: 0,
+            yoyo: false,
+            // when done tweening the cat then create and tween the size of the speech bubble 1 and the pointer
+            onComplete: () => {
+                this.speechBubble2 = this.add.sprite(this.speechBubble2X, this.speechBubble2Y, "speechBubble2").setScale(this.speechBubble2ScaleFrom);
+                this.uiLayer.add(this.speechBubble2);
+                this.tweens.add({
+                    targets: this.speechBubble2,
+                    scale: this.speechBubble2ScaleTo,
+                    duration: this.speechBubble2ScaleDuration,
+                    ease: this.speechBubbleSizeTweenEase,
+                });
+            }
+        });
     }
 }
