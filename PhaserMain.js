@@ -13,11 +13,11 @@ var config = {
     backgroundColor: 0xb3c3d3,
     scene: [Load, LevelSelect, LevelMaker],
     scale: {
-        mode: Phaser.Scale.FIT,
-        autoCenter: Phaser.Scale.CENTER_BOTH
+        mode: Phaser.Scale.FIT, // Adjusts to fit the width and height while maintaining aspect ratio
+        autoCenter: Phaser.Scale.CENTER_BOTH,
+        width: 1440,
+        height: 3200
     },
-    width: 1440,
-    height: 3200,
 };
 
 // var isMobile = navigator.userAgent.indexOf("Mobile");
@@ -46,7 +46,17 @@ var config = {
 
 var game = new Phaser.Game(config);
 
-window.addEventListener('resize', function () {
-    game.scale.resize(window.innerWidth, window.innerHeight);
-});
+// window.addEventListener('resize', function () {
+//     game.scale.resize(window.innerWidth, window.innerHeight);
+// });
 
+// window.addEventListener('resize', () => {
+//     const { innerWidth, innerHeight } = window;
+//     game.scale.resize(innerWidth, innerHeight);
+
+//     // Optionally adjust the scale or position of your sprites here
+//     // Example: adjust sprite scale based on new dimensions
+//     sprites.forEach(sprite => {
+//         sprite.setScale(innerWidth / originalWidth, innerHeight / originalHeight);
+//     });
+// });

@@ -9,7 +9,7 @@ Thumbs.db
 
 # Vendors
 node_modules/
-
+test/
 
 # Build
 /npm-debug.log
