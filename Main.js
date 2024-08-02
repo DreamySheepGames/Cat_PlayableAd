@@ -1,52 +1,29 @@
-// var config = {
-//     type: Phaser.AUTO,
-//     backgroundColor: 0xb3c3d3,
-//     scene: [Load, LevelSelect, LevelMaker],
-//     scale: {
-//         mode: Phaser.Scale.RESIZE,
-//         autoCenter: Phaser.Scale.CENTER_BOTH
-//     }
-// };
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
-var config = {
-    type: Phaser.AUTO,
-    backgroundColor: 0xb3c3d3,
-    scene: [Load, LevelSelect, LevelMaker],
-    scale: {
-        mode: Phaser.Scale.FIT,
-        autoCenter: Phaser.Scale.CENTER_BOTH
-    },
-    width: 1440,
-    height: 3200,
-};
+function createWindow() {
+    const mainWindow = new BrowserWindow({
+        //width: 1440,
+        height: 3200,
+        resizable: false,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js')
+        }
+    });
 
-// var isMobile = navigator.userAgent.indexOf("Mobile");
-// if (isMobile == -1) {
-//     isMobile = navigator.userAgent.indexOf("Tablet");
-// }
-// if (isMobile == -1) {
-//     var config = {
-//         type: Phaser.AUTO,
-//         backgroundColor: 0xb3c3d3,
-//         width: 480,
-//         height: 640,
-//         parent: 'phaser-game',
-//         scene: [Load, LevelSelect, LevelMaker]
-//     };
-// } else {
-//     var config = {
-//         type: Phaser.AUTO,
-//         backgroundColor: 0xb3c3d3,
-//         width: window.innerWidth,
-//         height: window.innerHeight,
-//         parent: 'phaser-game',
-//         scene: [Load, LevelSelect, LevelMaker]
-//     };
-// }
+    mainWindow.loadFile('index.html');
+}
 
-var game = new Phaser.Game(config);
+app.whenReady().then(createWindow);
 
-window.addEventListener('resize', function () {
-    game.scale.resize(window.innerWidth, window.innerHeight);
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
 });
 
+app.on('activate', () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+        createWindow();
+    }
+});

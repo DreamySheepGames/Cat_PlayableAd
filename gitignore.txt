@@ -10,9 +10,11 @@ Thumbs.db
 # Vendors
 node_modules/
 
+
 # Build
 /npm-debug.log
 build/
+dist/
 out/
 scripts/tsgen/test/bin/
 scripts/tsgen/test/output.txt
