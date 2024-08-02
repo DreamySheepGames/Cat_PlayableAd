@@ -6,107 +6,124 @@ class LevelMaker extends Phaser.Scene
 
     create()
     {
+        // json reader
+        this.levelMakerData = this.cache.json.get('levelMakerConfig');
+
         // config parameters
-        this.linkGame = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        this.linkGame = this.levelMakerData.linkGame;
 
-        this.gameLogoX = this.scale.width / 4;
-        this.gameLogoY = 300
-        this.gameLogoScale = this.scale.height / 5000;
+        var gameLogoXFactor = this.levelMakerData.gameLogo.xFactor;
+        this.gameLogoX = this.scale.width / gameLogoXFactor;
+        this.gameLogoY = this.levelMakerData.gameLogo.y;
 
-        this.downloadBtnX = this.scale.width / 4 * 2.75;
-        this.downloadBtnY = 300;
-        this.downloadBtnText = "DOWNLOAD";
-        this.downloadBtnFontSize = 100;
-        this.downloadBtnTextYOffset = 30;
-        this.downloadBtnScale = this.scale.height / 350;
+        var downloadBtnXFactor = this.levelMakerData.downloadBtn.xFactor;
+        this.downloadBtnX = this.scale.width / downloadBtnXFactor;
+        this.downloadBtnY = this.levelMakerData.downloadBtn.y;
+        this.downloadBtnText = this.levelMakerData.downloadBtn.text;
+        this.downloadBtnFontSize = this.levelMakerData.downloadBtn.fontSize;
+        this.downloadBtnTextYOffset = this.levelMakerData.downloadBtn.textYOffset;
+        var downloadBtnScaleFactor = this.levelMakerData.downloadBtn.scaleFactor;
+        this.downloadBtnScale = this.scale.height / downloadBtnScaleFactor;
 
-        this.catX = -1000;
-        this.catTweenToX = this.scale.width / 4;
-        this.catY = this.scale.height / 4 * 2.5;
-        this.catScale = 0.45;
-        this.tweenCatEase = "Cubic.easeOut";
-        this.tweenCatDuration = 800;
+        this.catX = this.levelMakerData.cat.x;
+        var catTweenToXFactor = this.levelMakerData.cat.tweenToXFactor;
+        this.catTweenToX = this.scale.width / catTweenToXFactor;
+        var catYFactor = this.levelMakerData.cat.yFactor;
+        this.catY = this.scale.height / catYFactor;
+        this.catScale = this.levelMakerData.cat.scale;
+        this.tweenCatEase = this.levelMakerData.cat.tweenCatEase;
+        this.tweenCatDuration = this.levelMakerData.cat.tweenCatDuration;
 
-        this.speechBubble1X = 700;
-        this.speechBubble1Y = this.scale.height / 4 * 2.5 - 450;
-        this.speechBubble1ScaleFrom = 0.1;
-        this.speechBubble1ScaleTo = 1.8;
-        this.speechBubble1ScaleDuration = 500;
-        this.speechBubbleSizeTweenEase = "Back.easeOut";
+        this.speechBubble1X = this.levelMakerData.speechBubble1.x;
+        var speechBubble1YFactor = this.levelMakerData.speechBubble1.yFactor;
+        this.speechBubble1Y = this.scale.height / speechBubble1YFactor - 450;
+        this.speechBubble1ScaleFrom = this.levelMakerData.speechBubble1.scaleFrom;
+        this.speechBubble1ScaleTo = this.levelMakerData.speechBubble1.scaleTo;
+        this.speechBubble1ScaleDuration = this.levelMakerData.speechBubble1.scaleDuration;
+        this.speechBubbleSizeTweenEase = this.levelMakerData.speechBubble1.speechBubbleSizeTweenEase;
 
-        this.speechBubble2X = 700;
-        this.speechBubble2Y = this.scale.height / 4 * 2.5 - 450;
-        this.speechBubble2ScaleFrom = 0.1;
-        this.speechBubble2ScaleTo = 1.8;
-        this.speechBubble2ScaleDuration = 500;
-        this.speechBubble2SizeTweenEase = "Back.easeOut";
+        this.speechBubble2X = this.levelMakerData.speechBubble2.x;
+        var speechBubble2YFactor = this.levelMakerData.speechBubble2.yFactor;
+        this.speechBubble2Y = this.scale.height / speechBubble2YFactor - 450;
+        this.speechBubble2ScaleFrom = this.levelMakerData.speechBubble2.scaleFrom;
+        this.speechBubble2ScaleTo = this.levelMakerData.speechBubble2.scaleTo;
+        this.speechBubble2ScaleDuration = this.levelMakerData.speechBubble2.scaleDuration;
+        this.speechBubble2SizeTweenEase = this.levelMakerData.speechBubble1.speechBubbleSizeTweenEase;
 
-        this.bubbleMoneyX = 1025;
-        this.bubbleMoneyY = 2050;
-        this.bubbleMoney2X = 235;
-        this.bubbleMoney2Y = 1550;
-        this.bubbleMoney3X = 1030;
-        this.bubbleMoney3Y = 1150;
-        this.bubbleMoneyScaleFrom = 0.1;
-        this.bubbleMoneyScaleTo = 1;
-        this.bubbleMoneyScaleDuration = 500;
-        this.bubbleMoneySizeTweenEase = "Back.easeOut";
-        this.bubbleTimerDuration = 2;
-        this.moneyScale = 0.3;
+        this.bubbleMoneyX = this.levelMakerData.bubbleMoney.x;
+        this.bubbleMoneyY = this.levelMakerData.bubbleMoney.y;
+        this.bubbleMoney2X = this.levelMakerData.bubbleMoney.x2;
+        this.bubbleMoney2Y = this.levelMakerData.bubbleMoney.y2;
+        this.bubbleMoney3X = this.levelMakerData.bubbleMoney.x3;
+        this.bubbleMoney3Y = this.levelMakerData.bubbleMoney.y3;
+        this.bubbleMoneyScaleFrom = this.levelMakerData.bubbleMoney.scaleFrom;
+        this.bubbleMoneyScaleTo = this.levelMakerData.bubbleMoney.scaleTo;
+        this.bubbleMoneyScaleDuration = this.levelMakerData.bubbleMoney.scaleDuration;
+        this.bubbleMoneySizeTweenEase = this.levelMakerData.bubbleMoney.sizeTweenEase;
+        this.bubbleTimerDuration = this.levelMakerData.bubbleMoney.timerDuration;
+        this.moneyScale = this.levelMakerData.bubbleMoney.moneyScale;
 
-        this.pointerX = this.speechBubble1X + 500;
-        this.pointerY = this.scale.height / 2;
-        this.pointerScaleStart = 0.1;
-        this.pointerScaleStartDuration = 300;
-        this.pointerScaleTo = 1;
-        this.pointerScaleBackTo = 0.8;
-        this.pointerScaleDuration = 600;
-        this.pointerSizeTweenEase = "Back.easeOut";
+        var pointerXFactor = this.levelMakerData.pointer.xFactor;
+        this.pointerX = this.speechBubble1X + pointerXFactor;
+        var pointerYFactor = this.levelMakerData.pointer.yFactor;
+        this.pointerY = this.scale.height / pointerYFactor;
+        this.pointerScaleStart = this.levelMakerData.pointer.scaleStart;
+        this.pointerScaleStartDuration = this.levelMakerData.pointer.scaleStartDuration;
+        this.pointerScaleTo = this.levelMakerData.pointer.scaleTo;
+        this.pointerScaleBackTo = this.levelMakerData.pointer.scaleBackTo;
+        this.pointerScaleDuration = this.levelMakerData.pointer.scaleDuration;
+        this.pointerSizeTweenEase = this.levelMakerData.pointer.sizeTweenEase;
 
         // money panel config
-        this.moneyPanelX = this.scale.width / 2;
-        this.moneyPanelY = 650;
+        var moneyPanelXFactor = this.levelMakerData.moneyPanel.moneyPanelXFactor;
+        this.moneyPanelX = this.scale.width / moneyPanelXFactor;
+        this.moneyPanelY = this.levelMakerData.moneyPanel.moneyPanelY;
 
         // the icon in the panel
-        this.moneyIconX = 250;
-        this.moneyIconY = this.moneyPanelY - 30;
-        this.moneyIconScale = 0.15;
+        this.moneyIconX = this.levelMakerData.moneyPanel.moneyIconX;
+        var moneyIconYFactor = this.levelMakerData.moneyPanel.moneyIconYFactor;
+        this.moneyIconY = this.moneyPanelY - moneyIconYFactor;
+        this.moneyIconScale = this.levelMakerData.moneyPanel.moneyIconScale;
 
         // the $
-        this.moneyUnitX = this.moneyPanelX - 250;
-        this.moneyUnitY = this.moneyPanelY - 70;
+        var moneyUnitXFactor = this.levelMakerData.moneyPanel.moneyUnitXFactor;
+        this.moneyUnitX = this.moneyPanelX - moneyUnitXFactor;
+        var moneyUnitYFactor = this.levelMakerData.moneyPanel.moneyUnitYFactor;
+        this.moneyUnitY = this.moneyPanelY - moneyUnitYFactor;
 
         // the money player got
-        this.moneyLabelX = this.moneyPanelX + 150;
-        this.moneyLabelY = this.moneyPanelY - 70;
+        var moneyLabelXFactor = this.levelMakerData.moneyPanel.moneyLabelXFactor;
+        this.moneyLabelX = this.moneyPanelX + moneyLabelXFactor;
+        var moneyLabelYFactor = this.levelMakerData.moneyPanel.moneyLabelYFactor;
+        this.moneyLabelY = this.moneyPanelY - moneyLabelYFactor;
 
-        this.moneyFont = "150px Arial";
-        this.moneyFontColor = "#278664";
+        this.moneyFont = this.levelMakerData.moneyPanel.moneyFont;
+        this.moneyFontColor = this.levelMakerData.moneyPanel.moneyFontColor;
 
         // interactable buildings
-        this.housePrice = 400;
+        this.hammerX = this.levelMakerData.hammer.x;
+        this.hammerY = this.levelMakerData.hammer.y;
+        this.hammer2X = this.levelMakerData.hammer.x2;
+        this.hammer2Y = this.levelMakerData.hammer.y2;
+        this.hammerScale = this.levelMakerData.hammer.scale;
+        this.tweenHitAngle = this.levelMakerData.hammer.tweenHitAngle;
+        this.tweenHitDuration = this.levelMakerData.hammer.tweenHitDuration;
+        this.tweenHammerEase = this.levelMakerData.hammer.tweenHammerEase;
+        this.vanishDuration = this.levelMakerData.hammer.vanishDuration;
 
-        this.hammerX = 100;
-        this.hammerY = 2000;
-        this.hammer2X = 800;
-        this.hammer2Y = 1600;
-        this.hammerScale = 0.8;
-        this.tweenHitAngle = 45;
-        this.tweenHitDuration = 200;
-        this.tweenHammerEase = "Linear"
-        this.vanishDuration = 100;
+        this.housePrice = this.levelMakerData.interBuildings.housePrice;
 
-        this.interBuilding1X = 1100;
-        this.interBuilding1Y = 2800;
-        this.interBuilding1Scale = 2;
+        this.interBuilding1X = this.levelMakerData.interBuildings.interBuilding1X;
+        this.interBuilding1Y = this.levelMakerData.interBuildings.interBuilding1Y;
+        this.interBuilding1Scale = this.levelMakerData.interBuildings.interBuilding1Scale;
 
-        this.interBuilding2X = 320;
-        this.interBuilding2Y = 2300;
-        this.interBuilding2Scale = 2;
+        this.interBuilding2X = this.levelMakerData.interBuildings.interBuilding2X;
+        this.interBuilding2Y = this.levelMakerData.interBuildings.interBuilding2Y;
+        this.interBuilding2Scale = this.levelMakerData.interBuildings.interBuilding2Scale;
 
-        this.interBuilding3X = 1120;
-        this.interBuilding3Y = 1900;
-        this.interBuilding3Scale = 2;
+        this.interBuilding3X = this.levelMakerData.interBuildings.interBuilding3X;
+        this.interBuilding3Y = this.levelMakerData.interBuildings.interBuilding3Y;
+        this.interBuilding3Scale = this.levelMakerData.interBuildings.interBuilding3Scale;
 
         // audio
         this.bgTheme = this.sound.add("audio_bgTheme", {
@@ -124,37 +141,29 @@ class LevelMaker extends Phaser.Scene
         // Create a group for isometric tiles, this is only for decoration at the top of the screen
         this.isometricTilesGroup = this.add.group();
 
-        this.isometricTileScale = 8;
-        this.isometricTileOffsetX = 250;
-        this.isometricTileOffsetY = -800;
+        this.isometricTileScale = this.levelMakerData.isometricTileConfig.scale;
+        this.isometricTileOffsetX = this.levelMakerData.isometricTileConfig.offsetX;
+        this.isometricTileOffsetY = this.levelMakerData.isometricTileConfig.offsetY;
 
         // custom isometric sprites (ground sprite, building sprite, buiding offset x, building offset y, buiding scale, tile scale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallYellowA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallYellowA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallYellowA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallYellowA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallYellowA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
-
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "churchA", 12, -15, 0.7, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallYellowA", 10, -10, 1, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "autoShopA", 10, -10, 0.75, this.isometricTileScale)
-        this.createIsometricTile(this.isometricTilesGroup, "ground_grass", "houseSmallBlueA", 10, -10, 1, this.isometricTileScale)
+        this.levelMakerData.isometricTiles.forEach(tile => {
+            this.createIsometricTile(
+                this.isometricTilesGroup, 
+                tile.ground, 
+                tile.building, 
+                tile.buildingOffsetX, 
+                tile.buildingOffsetY, 
+                tile.buildingScale, 
+                this.isometricTileScale
+            );
+        });
 
         // this is only for getting the ground texture dimension
         this.groundGrassTileTexture = this.textures.get("ground_grass").getSourceImage();
 
         this.createIsometricGrid(this.isometricTilesGroup,                                          // group
-                                 3,                                                                 // rows
-                                 6,                                                                 // column
+                                 this.levelMakerData.isometricTileConfig.row,                       // rows
+                                 this.levelMakerData.isometricTileConfig.column,                    // column
                                  this.groundGrassTileTexture.width * this.isometricTileScale,       // tile width
                                  this.groundGrassTileTexture.height * this.isometricTileScale,      // tile height
                                  this.isometricTileOffsetX, this.isometricTileOffsetY               // grid offset parameters
@@ -162,45 +171,41 @@ class LevelMaker extends Phaser.Scene
 
         // INTERACTIVE TILE SPRITES (the tiles we build the 3 buildings)
         this.isometricTilesGroupInteractive = this.add.group();
-        this.isometricTileInteractiveScale = 10;
-        this.isometricTileInteractiveOffsetX = 250;
-        this.isometricTileInteractiveOffsetY = 1200;
-        this.isometricTileInteractivePadding = 250;
+        this.isometricTileInteractiveScale = this.levelMakerData.isometricTileInteractiveConfig.scale;
+        this.isometricTileInteractiveOffsetX = this.levelMakerData.isometricTileInteractiveConfig.offsetX;
+        this.isometricTileInteractiveOffsetY = this.levelMakerData.isometricTileInteractiveConfig.offsetY;
+        this.isometricTileInteractivePadding = this.levelMakerData.isometricTileInteractiveConfig.padding;
 
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass_damaged", "treeCommon01", 0, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "policeStationB", 10, -10, 0.5, this.isometricTileInteractiveScale)
-        this.createIsometricTile(this.isometricTilesGroupInteractive, "ground_grass", "waterTowerA", 10, -10, 0.5, this.isometricTileInteractiveScale)
+        this.levelMakerData.isometricTileInteractive.forEach(tile => {
+            this.createIsometricTile(
+                this.isometricTilesGroupInteractive, 
+                tile.ground, 
+                tile.building, 
+                tile.buildingOffsetX, 
+                tile.buildingOffsetY, 
+                tile.buildingScale, 
+                this.isometricTileInteractiveScale
+            );
+        });
 
 
         // this is to get the ground texture dimension
         this.groundGrassDamagedTileTexture = this.textures.get("ground_grass_damaged").getSourceImage();
         
         this.createIsometricGrid(this.isometricTilesGroupInteractive,
-                                 3,                                                                                                                     // rows
-                                 4,                                                                                                                     // column
+                                 this.levelMakerData.isometricTileInteractiveConfig.row,                                                                // rows
+                                 this.levelMakerData.isometricTileInteractiveConfig.column,                                                             // column
                                  this.groundGrassDamagedTileTexture.width * this.isometricTileInteractiveScale + this.isometricTileInteractivePadding,  // tile width
                                  this.groundGrassDamagedTileTexture.height * this.isometricTileInteractiveScale + this.isometricTileInteractivePadding, // tile height
                                  this.isometricTileInteractiveOffsetX, this.isometricTileInteractiveOffsetY                                             // grid offset parameters
         );
 
-        // vehicles and probs
-        this.add.image(140, 850, "carWhiteA").setScale(4);
-        this.add.image(900, 2040, "carYellowB").setScale(4);
-        this.add.image(620, 750, "schoolBusB").setScale(4);
+        this.levelMakerData.probs.forEach(image => {
+            // Create the image using the data
+            this.add.image(image.x, image.y, image.key).setScale(image.scale);
+        });
 
         // interactable buildings
-        
         //Buliding(scene, x, y, scale, level = 1)
         this.interBuilding1 = new Building(this, this.interBuilding1X, this.interBuilding1Y, this.interBuilding1Scale, 1);
 
@@ -220,7 +225,6 @@ class LevelMaker extends Phaser.Scene
         // Add UI elements to the UI layer
         // Game logo
         this.gameLogo = this.add.image(this.gameLogoX, this.gameLogoY, "gameLogo");
-        //this.gameLogo.setScale(this.gameLogoScale);
         Align.scaleToGameW(this.gameLogo, 0.2)
         this.uiLayer.add(this.gameLogo);
 

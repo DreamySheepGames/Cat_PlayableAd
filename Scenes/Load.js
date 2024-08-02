@@ -53,7 +53,6 @@ class Load extends Phaser.Scene
         this.load.image("moneyPlural", "assets/UI/moneyPlural.png");
         this.load.image("glow", "assets/UI/glow.png");
         this.load.image("moneyPanel", "assets/UI/moneyPanel.png");
-        this.load.image("singleDollar", "assets/UI/singleDollar.png");
 
         // level up
         this.load.image("levelUpArrow", "assets/UI/levelUpArrow.png");
@@ -66,6 +65,7 @@ class Load extends Phaser.Scene
         this.load.image("party1", "assets/UI/party1.png");
         this.load.image("party2", "assets/UI/party2.png");
         this.load.image("lightColumn", "assets/UI/lightColumn.png");
+        this.load.image("singleDollar", "assets/UI/singleDollar.png");
 
         // sound
         this.load.audio("audio_bgTheme", "assets/Audio/BGTheme.ogg");
@@ -78,7 +78,8 @@ class Load extends Phaser.Scene
 
 
         // json
-        //this.load.json("", "");
+        this.load.json("levelMakerConfig", "LevelConfig/LevelMakerConfig.json");
+        this.load.json("moneyConfig", "LevelConfig/MoneyConfig.json");
     }
 
     create()

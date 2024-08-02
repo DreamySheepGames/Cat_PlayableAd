@@ -1,0 +1,180 @@
+{
+    "linkGame": "https://www.reddit.com/r/memes/comments/13fqnxw/ea_im_looking_at_you/",
+
+    "gameLogo": {
+        "xFactor": 4,
+        "y": 300
+    },
+
+    "downloadBtn": {
+        "xFactor": 1.45,
+        "y": 300,
+        "text": "DOWNLOAD",
+        "fontSize": 100,
+        "textYOffset": 30,
+        "scaleFactor": 350
+    },
+
+    "cat": {
+        "x": -1000,
+        "tweenToXFactor": 4,
+        "yFactor": 1.6,
+        "scale": 0.45,
+        "tweenCatEase": "Cubic.easeOut",
+        "tweenCatDuration": 800
+    },
+
+    "speechBubble1": {
+        "x": 700,
+        "yFactor": 1.6,
+        "scaleFrom": 0.1,
+        "scaleTo": 1.8,
+        "scaleDuration": 500,
+        "speechBubbleSizeTweenEase": "Back.easeOut"
+    },
+
+    "speechBubble2": {
+        "x": 700,
+        "yFactor": 1.6,
+        "scaleFrom": 0.1,
+        "scaleTo": 1.8,
+        "scaleDuration": 500,
+        "speechBubbleSizeTweenEase": "Back.easeOut"
+    },
+
+    "bubbleMoney": {
+        "x": 1025,
+        "y": 2050,
+        "x2": 235,
+        "y2": 1550,
+        "x3": 1030,
+        "y3": 1150,
+        "scaleFrom": 0.1,
+        "scaleTo": 1,
+        "scaleDuration": 500,
+        "sizeTweenEase": "Back.easeOut",
+        "timerDuration": 2,
+        "moneyScale": 0.3
+    },
+
+    "pointer": {
+        "xFactor": 500,
+        "yFactor": 2,
+        "scaleStart": 0.1,
+        "scaleStartDuration": 300,
+        "scaleTo": 1,
+        "scaleBackTo": 0.8,
+        "scaleDuration": 600,
+        "sizeTweenEase": "Back.easeOut"
+    },
+
+    "moneyPanel": {
+        "moneyPanelXFactor": 2,
+        "moneyPanelY": 650,
+
+        "moneyIconX": 250,
+        "moneyIconYFactor": 30,
+        "moneyIconScale": 0.15,
+
+        "moneyUnitXFactor": 250,
+        "moneyUnitYFactor": 70,
+
+        "moneyLabelXFactor": 150,
+        "moneyLabelYFactor": 70,
+
+        "moneyFont": "150px Arial",
+        "moneyFontColor": "#278664"
+    },
+
+    "hammer": {
+        "x": 100,
+        "y": 2000,
+        "x2": 800,
+        "y2": 1600,
+        "scale": 0.8,
+        "tweenHitAngle": 45,
+        "tweenHitDuration": 200,
+        "tweenHammerEase": "Linear",
+        "vanishDuration": 100
+    },
+
+    "interBuildings": {
+        "housePrice": 400,
+
+        "interBuilding1X": 1100,
+        "interBuilding1Y": 2800,
+        "interBuilding1Scale": 2,
+
+        "interBuilding2X": 320,
+        "interBuilding2Y": 2300,
+        "interBuilding2Scale": 2,
+
+        "interBuilding3X": 1120,
+        "interBuilding3Y": 1900,
+        "interBuilding3Scale": 2
+    },
+
+    "isometricTileConfig": {
+        "scale": 8,
+        "offsetX": 250,
+        "offsetY": -800,
+        "row": 3,
+        "column": 6
+    },
+
+    "isometricTiles": [
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+
+        { "ground": "ground_grass", "building": "houseSmallYellowA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallYellowA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallYellowA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallYellowA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallYellowA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "churchA", "buildingOffsetX": 12, "buildingOffsetY": -17, "buildingScale": 0.7},
+        { "ground": "ground_grass", "building": "houseSmallYellowA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1},
+        { "ground": "ground_grass", "building": "autoShopA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 0.75},
+        { "ground": "ground_grass", "building": "houseSmallBlueA", "buildingOffsetX": 10, "buildingOffsetY": -10, "buildingScale": 1}
+    ],
+
+    "isometricTileInteractiveConfig": {
+        "scale": 10,
+        "offsetX": 250,
+        "offsetY": 1200,
+        "padding": 250,
+        "row": 3,
+        "column": 4
+    },
+
+    "isometricTileInteractive": [
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass_damaged", "building": "treeCommon01", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass", "building": "policeStationB", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5},
+        { "ground": "ground_grass", "building": "waterTowerA", "buildingOffsetX": 0, "buildingOffsetY": -10, "buildingScale": 0.5}
+    ],
+
+    "probs": [
+      { "key": "carWhiteA", "x": 140, "y": 850, "scale": 4 },
+      { "key": "carYellowB", "x": 900, "y": 2040, "scale": 4 },
+      { "key": "schoolBusB", "x": 620, "y": 750, "scale": 4 }
+    ]
+      
+}

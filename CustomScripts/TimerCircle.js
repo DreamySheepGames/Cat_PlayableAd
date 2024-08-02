@@ -22,6 +22,15 @@ class TimerCircle extends Phaser.GameObjects.Container {
         this.sprite = scene.add.sprite(0, 0, spriteKey);
         this.add(this.sprite);
 
+        this.setScale(0.1);
+
+        this.scene.tweens.add({
+            targets: this,
+            scale: 1,
+            duration: 300,
+            ease: "Back.easeOut",
+        });
+
         // Create the graphics object for the timer circle
         this.timerGraphics = scene.add.graphics();
         this.add(this.timerGraphics);

@@ -15,10 +15,13 @@ class Money extends Phaser.GameObjects.Container {
         this.building = building;
 
         // config paramater
-        this.spawnMoneySpriteRate = 30;
-        this.moneySpriteTweenDuration = 700;
+        // json reader
+        this.moneyData = this.scene.cache.json.get('moneyConfig');
+
+        this.spawnMoneySpriteRate = this.moneyData.spawnRate;
+        this.moneySpriteTweenDuration = this.moneyData.tweenDuration;
         this.levelUpArrowScaleFrom = 0.1;
-        this.levelUpArrowScaleTo = 0.2;
+        this.levelUpArrowScaleTo = this.moneyData.scaleTo;
 
         // audio
         this.popSound = this.scene.sound.add("audio_pop", {

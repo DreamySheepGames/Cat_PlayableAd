@@ -50,7 +50,7 @@ class Building extends Phaser.GameObjects.Container {
             emitting: false
         });
 
-        this.moneyEmitter = this.scene.add.particles(x - 70, y - 400, "moneySingleSmall", {
+        this.moneyEmitter = this.scene.add.particles(x - 70, y - 400, "singleDollar", {
             lifespan: 800,
             speed: { min: 150, max: 650 },
             scale: { start: 0.1, end: 1 },
