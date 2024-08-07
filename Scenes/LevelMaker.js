@@ -6,6 +6,9 @@ class LevelMaker extends Phaser.Scene
 
     create()
     {
+        //resizeGame();
+        //resizeGame();
+
         // json reader
         this.levelMakerData = this.cache.json.get('levelMakerConfig');
 
@@ -56,10 +59,6 @@ class LevelMaker extends Phaser.Scene
         this.bubbleMoney2Y = this.levelMakerData.bubbleMoney.y2;
         this.bubbleMoney3X = this.levelMakerData.bubbleMoney.x3;
         this.bubbleMoney3Y = this.levelMakerData.bubbleMoney.y3;
-        this.bubbleMoneyScaleFrom = this.levelMakerData.bubbleMoney.scaleFrom;
-        this.bubbleMoneyScaleTo = this.levelMakerData.bubbleMoney.scaleTo;
-        this.bubbleMoneyScaleDuration = this.levelMakerData.bubbleMoney.scaleDuration;
-        this.bubbleMoneySizeTweenEase = this.levelMakerData.bubbleMoney.sizeTweenEase;
         this.bubbleTimerDuration = this.levelMakerData.bubbleMoney.timerDuration;
         this.moneyScale = this.levelMakerData.bubbleMoney.moneyScale;
 
@@ -80,7 +79,7 @@ class LevelMaker extends Phaser.Scene
         this.moneyPanelY = this.levelMakerData.moneyPanel.moneyPanelY;
 
         // the icon in the panel
-        this.moneyIconX = this.levelMakerData.moneyPanel.moneyIconX;
+        this.moneyIconX = this.moneyPanelX + this.levelMakerData.moneyPanel.moneyIconXFactor;
         var moneyIconYFactor = this.levelMakerData.moneyPanel.moneyIconYFactor;
         this.moneyIconY = this.moneyPanelY - moneyIconYFactor;
         this.moneyIconScale = this.levelMakerData.moneyPanel.moneyIconScale;
@@ -616,4 +615,24 @@ class LevelMaker extends Phaser.Scene
         });
 
     }
+}
+
+function resizeGame() {
+    const canvas = game.canvas;
+    if (canvas) {
+        const windowHeight = window.innerHeight;
+        const gameHeight = config.height;
+        const gameWidth = config.width;
+        const scaleRatio = windowHeight / gameHeight;
+
+        // Calculate new width for canvas
+        const scaledWidth = gameWidth * scaleRatio;
+
+        // Update canvas dimensions
+        canvas.style.height = `${windowHeight}px`;
+        canvas.style.marginTop = '0px';
+
+        this.cameras.main.centerOn(config.width / 2, windowHeight / 2);
+    }
+
 }

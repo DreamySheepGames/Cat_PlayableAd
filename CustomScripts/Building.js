@@ -25,12 +25,43 @@ class Building extends Phaser.GameObjects.Container {
 
         // Define sprites for each level
         this.levelSprites = [
-            "buildingLevel1", // Sprite key for level 1
-            "buildingLevel2"  // Sprite key for level 2
+            "dryer_lv1_00", // Sprite key for level 1
+            "dryer_lv3_00"  // Sprite key for level 2
         ];
 
+        // DRYER
+        // create animations
+        if (this.scene && this.scene.anims) {
+            // Create the dryer_lv1 animation
+            this.scene.anims.create({
+                key: 'dryerNormal',
+                repeat: -1,    // Set to -1 for infinite loop
+                frames: this.scene.anims.generateFrameNames('dryer', {
+                    prefix: 'dryer_lv1_',
+                    start: 0,
+                    end: 35,
+                    zeroPad: 2
+                })
+            });
+
+            // Create the dryer_lv3 animation
+            this.scene.anims.create({
+                key: 'dryerUpgraded',
+                repeat: -1,    // Set to -1 for infinite loop
+                frames: this.scene.anims.generateFrameNames('dryer', {
+                    prefix: 'dryer_lv3_',
+                    start: 0,
+                    end: 30,
+                    zeroPad: 2
+                })
+            });
+        } else {
+            console.error('Scene context or animations are not available.');
+        }
+
         // Create the building sprite based on the initial level
-        this.buildingSprite = scene.add.sprite(0, 0, this.levelSprites[this.level - 1]).setScale(0.1).setOrigin(0.5, 1);
+        this.buildingSprite = scene.add.sprite(0, 0, 'dryer', this.levelSprites[this.level - 1]).setScale(1).setOrigin(0.65, 0.6);
+
         this.add(this.buildingSprite);
         this.scene.tweens.add({
             targets: this.buildingSprite,
@@ -39,7 +70,19 @@ class Building extends Phaser.GameObjects.Container {
             ease: "Back.easeOut",
         });
 
-        // create particle fx
+        // Play animation based on the level of the buildings
+        switch (this.level)
+        {
+            case 1:
+                this.buildingSprite.play('dryerNormal');
+                break;
+
+            case 2:
+                this.buildingSprite.play('dryerUpgraded')
+                break;
+        }
+
+        // PARTICLE FX
         this.starEmitter = this.scene.add.particles(x - 70, y - 400, "star", {
             lifespan: 800,
             speed: { min: 450, max: 650 },
@@ -90,6 +133,7 @@ class Building extends Phaser.GameObjects.Container {
 
             // Update sprite to match the new level
             this.buildingSprite.setTexture(this.levelSprites[this.level - 1]).setScale(0.1);
+            this.buildingSprite.play("dryerUpgraded");
             this.scene.tweens.add({
                 targets: this.buildingSprite,
                 scale: this.scale,

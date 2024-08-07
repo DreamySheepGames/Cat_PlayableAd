@@ -76,10 +76,12 @@ class Load extends Phaser.Scene
         this.load.audio("audio_winning", "assets/Audio/winning.ogg");
         this.load.audio("audio_pop", "assets/Audio/pop.ogg");
 
-
         // json
         this.load.json("levelMakerConfig", "LevelConfig/LevelMakerConfig.json");
         this.load.json("moneyConfig", "LevelConfig/MoneyConfig.json");
+
+        // dryer
+        this.load.atlas("dryer", "assets/dryer/dryer.png", "assets/dryer/dryer.json");
     }
 
     create()

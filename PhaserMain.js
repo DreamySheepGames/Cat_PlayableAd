@@ -1,13 +1,3 @@
-// var config = {
-//     type: Phaser.AUTO,
-//     backgroundColor: 0xb3c3d3,
-//     scene: [Load, LevelSelect, LevelMaker],
-//     scale: {
-//         mode: Phaser.Scale.RESIZE,
-//         autoCenter: Phaser.Scale.CENTER_BOTH
-//     }
-// };
-
 var config = {
     type: Phaser.AUTO,
     backgroundColor: 0xb3c3d3,
@@ -46,17 +36,43 @@ var config = {
 
 var game = new Phaser.Game(config);
 
-// window.addEventListener('resize', function () {
-//     game.scale.resize(window.innerWidth, window.innerHeight);
-// });
 
-// window.addEventListener('resize', () => {
-//     const { innerWidth, innerHeight } = window;
-//     game.scale.resize(innerWidth, innerHeight);
+// // Phaser configuration
+// var config = {
+//     type: Phaser.AUTO,
+//     backgroundColor: 0xb3c3d3,
+//     scene: [Load, LevelSelect, LevelMaker],
+//     scale: {
+//         mode: Phaser.Scale.NONE, // Disable Phaser's built-in scaling
+//         autoCenter: Phaser.Scale.CENTER_BOTH,
+//         width: 1440 * 2,
+//         height: 3200
+//     }
+// };
 
-//     // Optionally adjust the scale or position of your sprites here
-//     // Example: adjust sprite scale based on new dimensions
-//     sprites.forEach(sprite => {
-//         sprite.setScale(innerWidth / originalWidth, innerHeight / originalHeight);
-//     });
-// });
+// // Initialize Phaser game
+// var game = new Phaser.Game(config);
+
+// // Resize game function
+// function resizeGame() {
+//     const canvas = game.canvas;
+//     if (canvas) {
+//         const windowHeight = window.innerHeight;
+//         const gameHeight = config.height;
+//         const gameWidth = config.width;
+//         const scaleRatio = windowHeight / gameHeight;
+
+//         // Calculate new width for canvas
+//         const scaledWidth = gameWidth * scaleRatio;
+
+//         // Update canvas dimensions
+//         canvas.style.height = `${windowHeight}px`;
+//         //canvas.style.width = `${scaledWidth}px`;
+//         //canvas.style.marginLeft = `${(window.innerWidth - scaledWidth) / 2}px`;
+//         canvas.style.marginTop = '0px';
+//     }
+// }
+
+// // Call resizeGame on game boot and window resize
+// game.events.once('boot', resizeGame);
+// window.addEventListener('resize', resizeGame);
