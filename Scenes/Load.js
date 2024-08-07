@@ -24,7 +24,6 @@ class Load extends Phaser.Scene
         // buildings
         this.load.image("houseSmallBlueA", "assets/IsometricSprites/Buildings/house_small_blue_a.png");
         this.load.image("houseSmallYellowA", "assets/IsometricSprites/Buildings/house_small_yellow_a.png");
-        this.load.image("houseMediumWhiteA", "assets/IsometricSprites/Buildings/house_medium_white_a.png");
         this.load.image("policeStationB", "assets/IsometricSprites/Buildings/police_station_b.png");
         this.load.image("waterTowerA", "assets/IsometricSprites/Buildings/water_tower_a.png");
         this.load.image("autoShopA", "assets/IsometricSprites/Buildings/auto_shop_a.png");
