@@ -14,6 +14,9 @@ class Load extends Phaser.Scene
         this.load.image("cat", "assets/Characters/cat.png");
         this.load.image("pointer", "assets/UI/pointer.png");
 
+        // background
+        this.load.image("background", "assets/background/BG.png");
+
         // ground tiles
         this.load.image("ground_grass", "assets/IsometricSprites/Grounds_Roads/ground_grass.png");
         this.load.image("ground_grass_damaged", "assets/IsometricSprites/Grounds_Roads/ground_grass_damaged.png");
@@ -86,7 +89,6 @@ class Load extends Phaser.Scene
         this.load.atlas("restingArea2", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades2/RestingArea_upgrades2.png", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades2/RestingArea_upgrades2.json");
         this.load.atlas("shredder1", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades1/Shredder_upgrades1.png", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades1/Shredder_upgrades1.json");
         this.load.atlas("shredder2", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades2/Shredder_upgrades2.png", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades2/Shredder_upgrades2.json");
-
     }
 
     create()
