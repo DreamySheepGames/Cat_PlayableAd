@@ -44,11 +44,11 @@
 
     "bubbleMoney": {
         "x": 1025,
-        "y": 2050,
-        "x2": 235,
-        "y2": 1550,
-        "x3": 1030,
-        "y3": 1150,
+        "y": 1050,
+        "x2": 335,
+        "y2": 1050,
+        "x3": 680,
+        "y3": 1750,
         "timerDuration": 2,
         "moneyScale": 1
     },
@@ -90,9 +90,9 @@
 
     "hammer": {
         "x": 100,
-        "y": 2000,
-        "x2": 800,
-        "y2": 1600,
+        "y": 1300,
+        "x2": 450,
+        "y2": 2000,
         "scale": 0.8,
         "tweenHitAngle": 45,
         "tweenHitDuration": 200,
@@ -104,15 +104,15 @@
         "housePrice": 400,
 
         "interBuilding1X": 1000,
-        "interBuilding1Y": 3000,
+        "interBuilding1Y": 1900,
         "interBuilding1Scale": 1.2,
 
         "interBuilding2X": 300,
-        "interBuilding2Y": 2500,
+        "interBuilding2Y": 1900,
         "interBuilding2Scale": 1.2,
 
-        "interBuilding3X": 920,
-        "interBuilding3Y": 2000,
+        "interBuilding3X": 620,
+        "interBuilding3Y": 2520,
         "interBuilding3Scale": 1.1
     },
 
