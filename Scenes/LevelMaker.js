@@ -6,8 +6,8 @@ class LevelMaker extends Phaser.Scene
 
     create()
     {
-        //resizeGame();
-        //resizeGame();
+        game.resizeGame();
+        game.resizeGame();
 
         // json reader
         this.levelMakerData = this.cache.json.get('levelMakerConfig');
@@ -16,11 +16,11 @@ class LevelMaker extends Phaser.Scene
         this.linkGame = this.levelMakerData.linkGame;
 
         var gameLogoXFactor = this.levelMakerData.gameLogo.xFactor;
-        this.gameLogoX = this.scale.width / gameLogoXFactor;
+        this.gameLogoX = this.scale.width / 2 + gameLogoXFactor;
         this.gameLogoY = this.levelMakerData.gameLogo.y;
 
         var downloadBtnXFactor = this.levelMakerData.downloadBtn.xFactor;
-        this.downloadBtnX = this.scale.width / downloadBtnXFactor;
+        this.downloadBtnX = this.scale.width / 2 + downloadBtnXFactor;
         this.downloadBtnY = this.levelMakerData.downloadBtn.y;
         this.downloadBtnText = this.levelMakerData.downloadBtn.text;
         this.downloadBtnFontSize = this.levelMakerData.downloadBtn.fontSize;
@@ -30,7 +30,7 @@ class LevelMaker extends Phaser.Scene
 
         this.catX = this.levelMakerData.cat.x;
         var catTweenToXFactor = this.levelMakerData.cat.tweenToXFactor;
-        this.catTweenToX = this.scale.width / catTweenToXFactor;
+        this.catTweenToX = this.scale.width / 2 + catTweenToXFactor;
         var catYFactor = this.levelMakerData.cat.yFactor;
         this.catY = this.scale.height / catYFactor;
         this.catScale = this.levelMakerData.cat.scale;
@@ -147,74 +147,6 @@ class LevelMaker extends Phaser.Scene
         this.background = this.add.image(this.scale.width / 2 + 45, this.scale.height / 2, "background");
         this.background.setScale(1.38);
 
-        // // isometric sprites
-        // // Create a group for isometric tiles, this is only for decoration at the top of the screen
-        // this.isometricTilesGroup = this.add.group();
-        //
-        // this.isometricTileScale = this.levelMakerData.isometricTileConfig.scale;
-        // this.isometricTileOffsetX = this.levelMakerData.isometricTileConfig.offsetX;
-        // this.isometricTileOffsetY = this.levelMakerData.isometricTileConfig.offsetY;
-        //
-        // // custom isometric sprites (ground sprite, building sprite, buiding offset x, building offset y, buiding scale, tile scale)
-        // this.levelMakerData.isometricTiles.forEach(tile => {
-        //     this.createIsometricTile(
-        //         this.isometricTilesGroup,
-        //         tile.ground,
-        //         tile.building,
-        //         tile.buildingOffsetX,
-        //         tile.buildingOffsetY,
-        //         tile.buildingScale,
-        //         this.isometricTileScale
-        //     );
-        // });
-        //
-        // // this is only for getting the ground texture dimension
-        // this.groundGrassTileTexture = this.textures.get("ground_grass").getSourceImage();
-        //
-        // this.createIsometricGrid(this.isometricTilesGroup,                                          // group
-        //                          this.levelMakerData.isometricTileConfig.row,                       // rows
-        //                          this.levelMakerData.isometricTileConfig.column,                    // column
-        //                          this.groundGrassTileTexture.width * this.isometricTileScale,       // tile width
-        //                          this.groundGrassTileTexture.height * this.isometricTileScale,      // tile height
-        //                          this.isometricTileOffsetX, this.isometricTileOffsetY               // grid offset parameters
-        // );
-        //
-        // // INTERACTIVE TILE SPRITES (the tiles we build the 3 buildings)
-        // this.isometricTilesGroupInteractive = this.add.group();
-        // this.isometricTileInteractiveScale = this.levelMakerData.isometricTileInteractiveConfig.scale;
-        // this.isometricTileInteractiveOffsetX = this.levelMakerData.isometricTileInteractiveConfig.offsetX;
-        // this.isometricTileInteractiveOffsetY = this.levelMakerData.isometricTileInteractiveConfig.offsetY;
-        // this.isometricTileInteractivePadding = this.levelMakerData.isometricTileInteractiveConfig.padding;
-        //
-        // this.levelMakerData.isometricTileInteractive.forEach(tile => {
-        //     this.createIsometricTile(
-        //         this.isometricTilesGroupInteractive,
-        //         tile.ground,
-        //         tile.building,
-        //         tile.buildingOffsetX,
-        //         tile.buildingOffsetY,
-        //         tile.buildingScale,
-        //         this.isometricTileInteractiveScale
-        //     );
-        // });
-        //
-        //
-        // // this is to get the ground texture dimension
-        // this.groundGrassDamagedTileTexture = this.textures.get("ground_grass_damaged").getSourceImage();
-        //
-        // this.createIsometricGrid(this.isometricTilesGroupInteractive,
-        //                          this.levelMakerData.isometricTileInteractiveConfig.row,                                                                // rows
-        //                          this.levelMakerData.isometricTileInteractiveConfig.column,                                                             // column
-        //                          this.groundGrassDamagedTileTexture.width * this.isometricTileInteractiveScale + this.isometricTileInteractivePadding,  // tile width
-        //                          this.groundGrassDamagedTileTexture.height * this.isometricTileInteractiveScale + this.isometricTileInteractivePadding, // tile height
-        //                          this.isometricTileInteractiveOffsetX, this.isometricTileInteractiveOffsetY                                             // grid offset parameters
-        // );
-        //
-        // this.levelMakerData.probs.forEach(image => {
-        //     // Create the image using the data
-        //     this.add.image(image.x, image.y, image.key).setScale(image.scale);
-        // });
-
         // interactable buildings
         // Buliding(scene, x, y, scale, level = 1, mode = 1)
         this.interBuilding1 = new Building(this, this.interBuilding1X, this.interBuilding1Y, this.interBuilding1Scale, 1, 1);
@@ -235,7 +167,7 @@ class LevelMaker extends Phaser.Scene
         // Add UI elements to the UI layer
         // Game logo
         this.gameLogo = this.add.image(this.gameLogoX, this.gameLogoY, "gameLogo");
-        Align.scaleToGameW(this.gameLogo, 0.2)
+        Align.scaleToGameW(this.gameLogo, 0.15)
         this.uiLayer.add(this.gameLogo);
 
         // buttons
@@ -262,6 +194,11 @@ class LevelMaker extends Phaser.Scene
 
     update()
     {
+        // game.scale.pageAlignHorizontally = true;
+        // game.scale.pageAlignVertically = true;
+        game.resizeGame();
+        game.scale.refresh();
+
         this.checkBuilding2();
         this.checkBuilding3();
     }
@@ -335,38 +272,6 @@ class LevelMaker extends Phaser.Scene
             
         }
     }
-
-    // createIsometricTile(group, ground, building, buildingOffsetX, buildingOffsetY, buildingScale, scale) {
-    //     let isometricTile = new CustomIsometricSprite(this, ground, building, buildingOffsetX, buildingOffsetY, buildingScale, scale);
-    //     group.add(isometricTile);
-    // }
-    //
-    // createIsometricGrid(group, rows, cols, tileWidth, tileHeight, offsetX, offsetY)
-    // {
-    //     let tiles = group.getChildren();
-    //
-    //     for (let row = 0; row < rows; row++) {
-    //         for (let col = 0; col < cols; col++) {
-    //             // calculate x, y of tile so we can set the tile at the end
-    //             let x = (col - row) * tileWidth / 2 + offsetX;
-    //             let y = (col + row) * tileHeight / 2 + offsetY;
-    //
-    //             // Calculate the index for the tile in the tile group
-    //             // for example: 3 row, 5 column:
-    //             // x x x x x
-    //             // o x x x x
-    //             // x x x x x
-    //             // the "o" is tile[5] because index = row * cols + col = 1 * 5 + 0
-    //
-    //             let index = row * cols + col;
-    //
-    //             if (index < tiles.length) {
-    //                 let tile = tiles[index];
-    //                 tile.setPosition(x, y);
-    //             }
-    //         }
-    //     }
-    // }
 
     createDarkLayer()
     {
@@ -538,8 +443,8 @@ class LevelMaker extends Phaser.Scene
         this.createRain();
 
         this.gameLogo.x = this.scale.width / 2;
-        this.gameLogo.y = this.gameLogo.y + 50;
-        Align.scaleToGameW(this.gameLogo, 0.3)
+        this.gameLogo.y = this.gameLogo.y + 100;
+        Align.scaleToGameW(this.gameLogo, 0.25)
 
         this.downloadBtn.x = this.scale.width / 2;
         this.downloadBtn.y = this.scale.height - this.downloadBtnY;
@@ -630,22 +535,3 @@ class LevelMaker extends Phaser.Scene
     }
 }
 
-function resizeGame() {
-    const canvas = game.canvas;
-    if (canvas) {
-        const windowHeight = window.innerHeight;
-        const gameHeight = config.height;
-        const gameWidth = config.width;
-        const scaleRatio = windowHeight / gameHeight;
-
-        // Calculate new width for canvas
-        const scaledWidth = gameWidth * scaleRatio;
-
-        // Update canvas dimensions
-        canvas.style.height = `${windowHeight}px`;
-        canvas.style.marginTop = '0px';
-
-        this.cameras.main.centerOn(config.width / 2, windowHeight / 2);
-    }
-
-}

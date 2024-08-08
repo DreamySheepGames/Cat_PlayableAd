@@ -2,12 +2,12 @@
     "linkGame": "https://play.google.com/store/apps/details?id=com.Skybull.CatTycoon",
 
     "gameLogo": {
-        "xFactor": 5,
+        "xFactor": -400,
         "y": 300
     },
 
     "downloadBtn": {
-        "xFactor": 1.45,
+        "xFactor": 200,
         "y": 300,
         "text": "",
         "fontSize": 100,
@@ -17,15 +17,15 @@
 
     "cat": {
         "x": -1000,
-        "tweenToXFactor": 4,
+        "tweenToXFactor": -500,
         "yFactor": 1.6,
-        "scale": 0.45,
+        "scale": 0.3,
         "tweenCatEase": "Cubic.easeOut",
         "tweenCatDuration": 800
     },
 
     "speechBubble1": {
-        "x": 700,
+        "x": 1200,
         "yFactor": 1.6,
         "scaleFrom": 0.1,
         "scaleTo": 1.8,
@@ -34,7 +34,7 @@
     },
 
     "speechBubble2": {
-        "x": 700,
+        "x": 1200,
         "yFactor": 1.6,
         "scaleFrom": 0.1,
         "scaleTo": 1.8,
@@ -43,11 +43,11 @@
     },
 
     "bubbleMoney": {
-        "x": 1025,
+        "x": 1625,
         "y": 1050,
-        "x2": 335,
+        "x2": 835,
         "y2": 1050,
-        "x3": 680,
+        "x3": 1180,
         "y3": 1750,
         "timerDuration": 2,
         "moneyScale": 1
@@ -89,9 +89,9 @@
     },
 
     "hammer": {
-        "x": 100,
+        "x": 600,
         "y": 1300,
-        "x2": 450,
+        "x2": 950,
         "y2": 2000,
         "scale": 0.8,
         "tweenHitAngle": 45,
@@ -103,15 +103,15 @@
     "interBuildings": {
         "housePrice": 400,
 
-        "interBuilding1X": 1000,
+        "interBuilding1X": 1600,
         "interBuilding1Y": 1900,
         "interBuilding1Scale": 1.2,
 
-        "interBuilding2X": 300,
+        "interBuilding2X": 800,
         "interBuilding2Y": 1900,
         "interBuilding2Scale": 1.2,
 
-        "interBuilding3X": 620,
+        "interBuilding3X": 1020,
         "interBuilding3Y": 2520,
         "interBuilding3Scale": 1.1
     },

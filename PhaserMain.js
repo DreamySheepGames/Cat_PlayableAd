@@ -1,78 +1,51 @@
+// Phaser configuration
 var config = {
     type: Phaser.AUTO,
     backgroundColor: 0xb3c3d3,
     scene: [Load, LevelSelect, LevelMaker],
     scale: {
-        mode: Phaser.Scale.FIT, // Adjusts to fit the width and height while maintaining aspect ratio
-        autoCenter: Phaser.Scale.CENTER_BOTH,
-        width: 1440,
+        mode: Phaser.Scale.NONE, // Disable Phaser's built-in scaling
+        autoCenter: Phaser.Scale.CENTER_VERTICALLY,
+        width: 1440 * 1.6,
         height: 3200
-    },
+    }
 };
 
-// var isMobile = navigator.userAgent.indexOf("Mobile");
-// if (isMobile == -1) {
-//     isMobile = navigator.userAgent.indexOf("Tablet");
-// }
-// if (isMobile == -1) {
-//     var config = {
-//         type: Phaser.AUTO,
-//         backgroundColor: 0xb3c3d3,
-//         width: 480,
-//         height: 640,
-//         parent: 'phaser-game',
-//         scene: [Load, LevelSelect, LevelMaker]
-//     };
-// } else {
-//     var config = {
-//         type: Phaser.AUTO,
-//         backgroundColor: 0xb3c3d3,
-//         width: window.innerWidth,
-//         height: window.innerHeight,
-//         parent: 'phaser-game',
-//         scene: [Load, LevelSelect, LevelMaker]
-//     };
-// }
-
+// Initialize Phaser game
 var game = new Phaser.Game(config);
 
+// Resize game function
+game.resizeGame = function resizeGame() {
+    const canvas = game.canvas;
+    if (canvas) {
+        const windowHeight = window.innerHeight;
+        const gameHeight = game.config.height;
+        const gameWidth = game.config.width;
+        const scaleRatio = windowHeight / gameHeight;
 
-// // Phaser configuration
-// var config = {
-//     type: Phaser.AUTO,
-//     backgroundColor: 0xb3c3d3,
-//     scene: [Load, LevelSelect, LevelMaker],
-//     scale: {
-//         mode: Phaser.Scale.NONE, // Disable Phaser's built-in scaling
-//         autoCenter: Phaser.Scale.CENTER_BOTH,
-//         width: 1440 * 2,
-//         height: 3200
-//     }
-// };
+        // Calculate new width for canvas
+        const scaledWidth = gameWidth * scaleRatio;
 
-// // Initialize Phaser game
-// var game = new Phaser.Game(config);
+        // Update canvas dimensions
+        canvas.style.height = `${windowHeight}px`;
+        canvas.style.width = `${scaledWidth}px`;
+        //console.log(canvas.style.width)
+        //canvas.style.marginLeft = `${(window.innerWidth - scaledWidth) / 2}px`;
 
-// // Resize game function
-// function resizeGame() {
-//     const canvas = game.canvas;
-//     if (canvas) {
-//         const windowHeight = window.innerHeight;
-//         const gameHeight = config.height;
-//         const gameWidth = config.width;
-//         const scaleRatio = windowHeight / gameHeight;
+        // canvas.style.marginTop = '0px';
 
-//         // Calculate new width for canvas
-//         const scaledWidth = gameWidth * scaleRatio;
+        // Calculate the horizontal offset to center the canvas
+        const horizontalOffset = (window.innerWidth - scaledWidth) / 2;
+        if (horizontalOffset > 0) {
+            canvas.style.transform = `translateX(${horizontalOffset}px)`;
+        } else {
+            canvas.style.transform = `translateX(${horizontalOffset}px)`;
+        }
 
-//         // Update canvas dimensions
-//         canvas.style.height = `${windowHeight}px`;
-//         //canvas.style.width = `${scaledWidth}px`;
-//         //canvas.style.marginLeft = `${(window.innerWidth - scaledWidth) / 2}px`;
-//         canvas.style.marginTop = '0px';
-//     }
-// }
+        canvas.style.marginTop = '0px';
+    }
+}
 
-// // Call resizeGame on game boot and window resize
-// game.events.once('boot', resizeGame);
-// window.addEventListener('resize', resizeGame);
+// Call resizeGame on game boot and window resize
+game.events.once('boot', game.resizeGame);
+window.addEventListener('resize', game.resizeGame);
