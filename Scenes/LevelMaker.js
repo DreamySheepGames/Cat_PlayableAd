@@ -64,19 +64,26 @@ class LevelMaker extends Phaser.Scene
 
         var pointerXFactor = this.levelMakerData.pointer.xFactor;
         this.pointerX = this.speechBubble1X + pointerXFactor;
-        var pointerYFactor = this.levelMakerData.pointer.yFactor;
-        this.pointerY = this.scale.height / pointerYFactor;
+        // var pointerYFactor = this.levelMakerData.pointer.yFactor;
+        // this.pointerY = this.scale.height / pointerYFactor;
+        this.pointerY = this.levelMakerData.pointer.y;
         this.pointerScaleStart = this.levelMakerData.pointer.scaleStart;
         this.pointerScaleStartDuration = this.levelMakerData.pointer.scaleStartDuration;
         this.pointerScaleTo = this.levelMakerData.pointer.scaleTo;
         this.pointerScaleBackTo = this.levelMakerData.pointer.scaleBackTo;
         this.pointerScaleDuration = this.levelMakerData.pointer.scaleDuration;
         this.pointerSizeTweenEase = this.levelMakerData.pointer.sizeTweenEase;
+        this.pointerBubbleOffsetX = this.levelMakerData.pointer.bubbleOffsetX;
+        this.pointerBubbleOffsetY = this.levelMakerData.pointer.bubbleOffsetY;
+        this.pointerDownloadBtnOffsetX = this.levelMakerData.pointer.downloadBtnOffsetX;
+        this.pointerDownloadBtnOffsetY = this.levelMakerData.pointer.downloadBtnOffsetY;
 
         // money panel config
         var moneyPanelXFactor = this.levelMakerData.moneyPanel.moneyPanelXFactor;
         this.moneyPanelX = this.scale.width / moneyPanelXFactor;
         this.moneyPanelY = this.levelMakerData.moneyPanel.moneyPanelY;
+        this.moneyPanelScaleX = this.levelMakerData.moneyPanel.moneyPanelScaleX;
+        this.moneyPanelScaleY = this.levelMakerData.moneyPanel.moneyPanelScaleY;
 
         // the icon in the panel
         this.moneyIconX = this.moneyPanelX + this.levelMakerData.moneyPanel.moneyIconXFactor;
@@ -205,8 +212,8 @@ class LevelMaker extends Phaser.Scene
         });
 
         // interactable buildings
-        //Buliding(scene, x, y, scale, level = 1)
-        this.interBuilding1 = new Building(this, this.interBuilding1X, this.interBuilding1Y, this.interBuilding1Scale, 1);
+        // Buliding(scene, x, y, scale, level = 1, mode = 1)
+        this.interBuilding1 = new Building(this, this.interBuilding1X, this.interBuilding1Y, this.interBuilding1Scale, 1, 1);
 
         // Create a semi black rectangle that covers the entire game screen
         this.createDarkLayer();
@@ -272,8 +279,8 @@ class LevelMaker extends Phaser.Scene
                 this.moneyTotal -= this.housePrice;
                 this.moneyLabel.text = this.moneyTotal;
 
-                // Building(scene, x, y, scale, level = 1)
-                this.interBuilding2 = new Building(this, this.interBuilding2X, this.interBuilding2Y, this.interBuilding2Scale, 1);
+                // Building(scene, x, y, scale, level = 1, mode = 1)
+                this.interBuilding2 = new Building(this, this.interBuilding2X, this.interBuilding2Y, this.interBuilding2Scale, 1, 2);
                 // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey, mode = 1, building)
                 this.timerCircle2 = new TimerCircle(this, this.bubbleMoney2X, this.bubbleMoney2Y, 
                                                 1, "speechBubbleMoney", "moneySingle", this.moneyScale, "glow",
@@ -282,8 +289,8 @@ class LevelMaker extends Phaser.Scene
                                                 );
 
                 // pointer
-                this.pointer.x = this.bubbleMoney2X + 70;
-                this.pointer.y = this.bubbleMoney2Y + 80;
+                this.pointer.x = this.bubbleMoney2X + this.pointerBubbleOffsetX;
+                this.pointer.y = this.bubbleMoney2Y + this.pointerBubbleOffsetY;
                 this.pointer.setVisible(true);
             });
             
@@ -307,8 +314,8 @@ class LevelMaker extends Phaser.Scene
                 this.moneyTotal -= this.housePrice;
                 this.moneyLabel.text = this.moneyTotal;
 
-                // Building(scene, x, y, scale, level = 1)
-                this.interBuilding3 = new Building(this, this.interBuilding3X, this.interBuilding3Y, this.interBuilding3Scale, 1);
+                // Building(scene, x, y, scale, level = 1, mode = 1)
+                this.interBuilding3 = new Building(this, this.interBuilding3X, this.interBuilding3Y, this.interBuilding3Scale, 1, 3);
                 // TimerCircle(scene, x, y, duration, spriteKey, onCompleteSpriteKey, onCompleteSpriteScale = 1, onCompleteGlowKey, mode = 1, building)
                 this.timerCircle3 = new TimerCircle(this, this.bubbleMoney3X, this.bubbleMoney3Y, 
                                                 1, "speechBubbleMoney", "moneySingle", this.moneyScale, "glow",
@@ -317,8 +324,8 @@ class LevelMaker extends Phaser.Scene
                                                 );
                 
                 // pointer
-                this.pointer.x = this.bubbleMoney3X + 70;
-                this.pointer.y = this.bubbleMoney3Y + 80;
+                this.pointer.x = this.bubbleMoney3X + this.pointerBubbleOffsetX;
+                this.pointer.y = this.bubbleMoney3Y + this.pointerBubbleOffsetY;
                 this.pointer.setVisible(true);
             });
             
@@ -466,8 +473,8 @@ class LevelMaker extends Phaser.Scene
                                         this.interBuilding1
                                         );
         this.pointer.setVisible(true);
-        this.pointer.x = this.bubbleMoneyX + 70;
-        this.pointer.y = this.bubbleMoneyY + 80;
+        this.pointer.x = this.bubbleMoneyX + this.pointerBubbleOffsetX;
+        this.pointer.y = this.bubbleMoneyY + this.pointerBubbleOffsetY;
         this.pointer.setDepth(1);
     }
 
@@ -479,7 +486,8 @@ class LevelMaker extends Phaser.Scene
 
         // the panel sprite
         this.moneyPanel = this.add.image(this.moneyPanelX, this.moneyPanelY, "moneyPanel");
-        this.moneyPanelSet.add(this.moneyPanel)      
+        this.moneyPanel.setScale(this.moneyPanelScaleX, this.moneyPanelScaleY);
+        this.moneyPanelSet.add(this.moneyPanel);
 
         // add the icon
         this.moneyIcon = this.add.image(this.moneyIconX, this.moneyIconY, "moneyPlural").setScale(this.moneyIconScale);
@@ -526,6 +534,7 @@ class LevelMaker extends Phaser.Scene
         this.createRain();
 
         this.gameLogo.x = this.scale.width / 2;
+        this.gameLogo.y = this.gameLogo.y + 50;
         Align.scaleToGameW(this.gameLogo, 0.3)
 
         this.downloadBtn.x = this.scale.width / 2;
@@ -533,8 +542,8 @@ class LevelMaker extends Phaser.Scene
         this.downloadBtn.setScale(1.3);
 
         this.pointer.setVisible(true);
-        this.pointer.x = this.downloadBtn.x + 220;
-        this.pointer.y = this.downloadBtn.y + 70;
+        this.pointer.x = this.downloadBtn.x + this.pointerDownloadBtnOffsetX;
+        this.pointer.y = this.downloadBtn.y + this.pointerDownloadBtnOffsetY;
         this.pointer.setScale(this.pointerScaleTo * 1.5)
         
         // create and tween the cat

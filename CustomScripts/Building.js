@@ -1,5 +1,5 @@
 class Building extends Phaser.GameObjects.Container {
-    constructor(scene, x, y, scale, level = 1) {
+    constructor(scene, x, y, scale, level = 1, mode = 1) {
         super(scene, x, y);
 
         this.x = x;
@@ -7,6 +7,7 @@ class Building extends Phaser.GameObjects.Container {
         this.scene = scene;
         this.level = level;
         this.scale = scale;
+        this.mode = mode;                   // 1: dryer, 2: resting area, 3: shredder
 
         // config parameter
         this.buildingBounceTween = "Cubic.easeOut";
@@ -25,42 +26,155 @@ class Building extends Phaser.GameObjects.Container {
 
         // Define sprites for each level
         this.levelSprites = [
-            "dryer_lv1_00", // Sprite key for level 1
-            "dryer_lv3_00"  // Sprite key for level 2
+            "Dryer_upgrades1_00", // Sprite key for level 1
+            "Dryer_upgrades2_00"  // Sprite key for level 2
         ];
 
-        // DRYER
+        this.levelRestingAreaSprites = [
+            "RestingArea_upgrades1_00", // Sprite key for level 1
+            "RestingArea_upgrades2_00"  // Sprite key for level 2
+        ];
+
+        this.levelShredderSprites = [
+            "Shredder_upgrades1_00", // Sprite key for level 1
+            "Shredder_upgrades2_00"  // Sprite key for level 2
+        ];
+
+
         // create animations
         if (this.scene && this.scene.anims) {
-            // Create the dryer_lv1 animation
+            // DRYER
+            // Create the initial animation (frames 0 to 29)
             this.scene.anims.create({
                 key: 'dryerNormal',
-                repeat: -1,    // Set to -1 for infinite loop
-                frames: this.scene.anims.generateFrameNames('dryer', {
-                    prefix: 'dryer_lv1_',
+                frames: this.scene.anims.generateFrameNames('dryer1', {
+                    prefix: 'Dryer_upgrades1_',
+                    suffix: ".png",
+                    start: 0,
+                    end: 43,
+                    zeroPad: 2
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: -1    // Do not repeat
+            });
+
+            // Create the initial upgrade animation (frames 0 to 29)
+            this.scene.anims.create({
+                key: 'dryerUpgraded',
+                frames: this.scene.anims.generateFrameNames('dryer2', {
+                    prefix: 'Dryer_upgrades2_',
+                    suffix: ".png",
+                    start: 0,
+                    end: 29,
+                    zeroPad: 2
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: 0    // Repeat indefinitely
+            });
+
+            // Create the upgrade loop animation (frames 30 to 75)
+            this.scene.anims.create({
+                key: 'dryerUpgradedLoop',
+                frames: this.scene.anims.generateFrameNames('dryer2', {
+                    prefix: 'Dryer_upgrades2_',
+                    suffix: ".png",
+                    start: 30,
+                    end: 75,
+                    zeroPad: 2
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: -1    // Repeat indefinitely
+            });
+
+            // RESTING AREA
+            this.scene.anims.create({
+                key: 'restingAreaNormal',
+                frames: this.scene.anims.generateFrameNames('restingArea1', {
+                    prefix: 'RestingArea_upgrades1_',
+                    suffix: ".png",
+                    start: 0,
+                    end: 99,
+                    zeroPad: 2
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: -1    // Do not repeat
+            });
+
+            // Create the upgrade loop animation (frames 30 to 75)
+            this.scene.anims.create({
+                key: 'restingAreaUpgradedLoop',
+                frames: this.scene.anims.generateFrameNames('restingArea2', {
+                    prefix: 'RestingArea_upgrades2_',
+                    suffix: ".png",
+                    start: 0,
+                    end: 99,
+                    zeroPad: 2
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: -1    // Repeat indefinitely
+            });
+
+            // SHREDDER
+            // Create the initial animation (frames 0 to 29)
+            this.scene.anims.create({
+                key: 'shredderNormal',
+                frames: this.scene.anims.generateFrameNames('shredder1', {
+                    prefix: 'Shredder_upgrades1_',
+                    suffix: ".png",
+                    start: 0,
+                    end: 59,
+                    zeroPad: 2
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: -1    // Do not repeat
+            });
+
+            // Create the initial upgrade animation (frames 0 to 29)
+            this.scene.anims.create({
+                key: 'shredderUpgraded',
+                frames: this.scene.anims.generateFrameNames('shredder2', {
+                    prefix: 'Shredder_upgrades2_',
+                    suffix: ".png",
                     start: 0,
                     end: 35,
                     zeroPad: 2
-                })
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: 0    // Repeat indefinitely
             });
 
-            // Create the dryer_lv3 animation
+            // Create the upgrade loop animation (frames 30 to 75)
             this.scene.anims.create({
-                key: 'dryerUpgraded',
-                repeat: -1,    // Set to -1 for infinite loop
-                frames: this.scene.anims.generateFrameNames('dryer', {
-                    prefix: 'dryer_lv3_',
-                    start: 0,
-                    end: 30,
+                key: 'shredderUpgradedLoop',
+                frames: this.scene.anims.generateFrameNames('shredder2', {
+                    prefix: 'Shredder_upgrades2_',
+                    suffix: ".png",
+                    start: 36,
+                    end: 139,
                     zeroPad: 2
-                })
+                }),
+                frameRate: 24, // Adjust as needed
+                repeat: -1    // Repeat indefinitely
             });
         } else {
             console.error('Scene context or animations are not available.');
         }
 
         // Create the building sprite based on the initial level
-        this.buildingSprite = scene.add.sprite(0, 0, 'dryer', this.levelSprites[this.level - 1]).setScale(1).setOrigin(0.65, 0.6);
+        switch (this.mode)
+        {
+            case 1:
+                this.buildingSprite = scene.add.sprite(0, 0, 'dryer1', this.levelSprites[this.level - 1]).setScale(1).setOrigin(0.65, 0.6);
+                break;
+
+            case 2:
+                this.buildingSprite = scene.add.sprite(0, 0, 'restingArea1', this.levelRestingAreaSprites[this.level - 1]).setScale(1).setOrigin(0.35, 0.6);
+                break;
+
+            case 3:
+                this.buildingSprite = scene.add.sprite(0, 0, 'shredder1', this.levelShredderSprites[this.level - 1]).setScale(1).setOrigin(0.4, 0.8);
+                break;
+        }
 
         this.add(this.buildingSprite);
         this.scene.tweens.add({
@@ -71,16 +185,29 @@ class Building extends Phaser.GameObjects.Container {
         });
 
         // Play animation based on the level of the buildings
-        switch (this.level)
+        switch (this.mode)
         {
             case 1:
                 this.buildingSprite.play('dryerNormal');
                 break;
 
             case 2:
-                this.buildingSprite.play('dryerUpgraded')
+                this.buildingSprite.play('restingAreaNormal');
+                //this.buildingSprite = scene.add.sprite(0, 0, 'restingArea1', "RestingArea_upgrades1_00").setScale(1).setOrigin(0.65, 0.6);
+                break;
+
+            case 3:
+                this.buildingSprite.play('shredderNormal');
                 break;
         }
+
+        // listener to change from the upgrade anim to loop anim
+        this.buildingSprite.on('animationcomplete-dryerUpgraded', () => {
+            this.buildingSprite.play('dryerUpgradedLoop');
+        });
+        this.buildingSprite.on('animationcomplete-shredderUpgraded', () => {
+            this.buildingSprite.play('shredderUpgradedLoop');
+        });
 
         // PARTICLE FX
         this.starEmitter = this.scene.add.particles(x, y - 400, "star", {
@@ -132,8 +259,23 @@ class Building extends Phaser.GameObjects.Container {
             this.level += 1;
 
             // Update sprite to match the new level
-            this.buildingSprite.setTexture(this.levelSprites[this.level - 1]).setScale(0.1);
-            this.buildingSprite.play("dryerUpgraded");
+            switch (this.mode)
+            {
+                case 1:
+                    this.buildingSprite.setTexture(this.levelSprites[this.level - 1]).setScale(0.1);
+                    this.buildingSprite.play("dryerUpgraded");
+                    break;
+
+                case 2:
+                    this.buildingSprite.setTexture(this.levelRestingAreaSprites[this.level - 1]).setScale(0.1);
+                    this.buildingSprite.play("restingAreaUpgradedLoop");
+                    break;
+
+                case 3:
+                    this.buildingSprite.setTexture(this.levelRestingAreaSprites[this.level - 1]).setScale(0.1);
+                    this.buildingSprite.play("shredderUpgraded");
+                    break;
+            }
             this.scene.tweens.add({
                 targets: this.buildingSprite,
                 scale: this.scale,

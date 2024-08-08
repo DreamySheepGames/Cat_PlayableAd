@@ -1,0 +1,1280 @@
+{
+	"textures": [
+		{
+			"image": "Shredder_upgrades1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3515,
+				"h": 4692
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Shredder_upgrades1_00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 1,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 1,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 1,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 1,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 392,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 392,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 392,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 392,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 392,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 783,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 783,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 783,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 783,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 783,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 1174,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 1174,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 1174,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 1174,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 1174,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 1565,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 1565,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 1565,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 1565,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 1565,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 1956,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 1956,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 1956,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 1956,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 1956,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 2347,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 2347,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 2347,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 2347,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 2347,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 2738,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 2738,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 2738,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 2738,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 2738,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 3129,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 3129,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 3129,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 3129,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_44.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 3129,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 3520,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 3520,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 3520,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_48.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 3520,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_49.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 3520,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_50.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 3911,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_51.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 3911,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_52.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 3911,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_53.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 3911,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_54.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 3911,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_55.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1,
+						"y": 4302,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_56.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 704,
+						"y": 4302,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_57.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 1407,
+						"y": 4302,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_58.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2110,
+						"y": 4302,
+						"w": 701,
+						"h": 389
+					}
+				},
+				{
+					"filename": "Shredder_upgrades1_59.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 390,
+						"y": 1329,
+						"w": 701,
+						"h": 389
+					},
+					"frame": {
+						"x": 2813,
+						"y": 4302,
+						"w": 701,
+						"h": 389
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:5ecb6ae29451cfc0e2508fd58747ad25:1c6edfae9768b38d566ee7d58af5ab51:4f8680a736b729aee389a58f649c391e$"
+	}
+}

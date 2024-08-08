@@ -2,17 +2,17 @@
     "linkGame": "https://play.google.com/store/apps/details?id=com.Skybull.CatTycoon",
 
     "gameLogo": {
-        "xFactor": 4,
+        "xFactor": 5,
         "y": 300
     },
 
     "downloadBtn": {
         "xFactor": 1.45,
         "y": 300,
-        "text": "DOWNLOAD",
+        "text": "",
         "fontSize": 100,
         "textYOffset": 30,
-        "scaleFactor": 350
+        "scaleFactor": 1400
     },
 
     "cat": {
@@ -50,27 +50,33 @@
         "x3": 1030,
         "y3": 1150,
         "timerDuration": 2,
-        "moneyScale": 0.3
+        "moneyScale": 1
     },
 
     "pointer": {
-        "xFactor": 500,
-        "yFactor": 2,
+        "xFactor": 550,
+        "y": 1650,
         "scaleStart": 0.1,
         "scaleStartDuration": 300,
-        "scaleTo": 1,
-        "scaleBackTo": 0.8,
+        "scaleTo": 0.6,
+        "scaleBackTo": 0.5,
         "scaleDuration": 600,
-        "sizeTweenEase": "Back.easeOut"
+        "sizeTweenEase": "Back.easeOut",
+        "bubbleOffsetX": 150,
+        "bubbleOffsetY": 150,
+        "downloadBtnOffsetX": 460,
+        "downloadBtnOffsetY": 160
     },
 
     "moneyPanel": {
         "moneyPanelXFactor": 2,
         "moneyPanelY": 650,
+        "moneyPanelScaleX": 6,
+        "moneyPanelScaleY": 5,
 
         "moneyIconXFactor": -460,
-        "moneyIconYFactor": 30,
-        "moneyIconScale": 0.15,
+        "moneyIconYFactor": 0,
+        "moneyIconScale": 1.8,
 
         "moneyUnitXFactor": 250,
         "moneyUnitYFactor": 70,
@@ -99,15 +105,15 @@
 
         "interBuilding1X": 1000,
         "interBuilding1Y": 3000,
-        "interBuilding1Scale": 2,
+        "interBuilding1Scale": 1.2,
 
-        "interBuilding2X": 220,
+        "interBuilding2X": 300,
         "interBuilding2Y": 2500,
-        "interBuilding2Scale": 2,
+        "interBuilding2Scale": 1.2,
 
-        "interBuilding3X": 1020,
+        "interBuilding3X": 920,
         "interBuilding3Y": 2000,
-        "interBuilding3Scale": 2
+        "interBuilding3Scale": 1.1
     },
 
     "isometricTileConfig": {

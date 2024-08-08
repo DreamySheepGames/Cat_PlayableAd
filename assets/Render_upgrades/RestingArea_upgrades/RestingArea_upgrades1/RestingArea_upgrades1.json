@@ -1,0 +1,2120 @@
+{
+	"textures": [
+		{
+			"image": "RestingArea_upgrades1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3927,
+				"h": 7665
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "RestingArea_upgrades1_03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 525
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 559,
+						"h": 525
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 523
+					},
+					"frame": {
+						"x": 562,
+						"y": 1,
+						"w": 559,
+						"h": 523
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 515
+					},
+					"frame": {
+						"x": 1123,
+						"y": 1,
+						"w": 559,
+						"h": 515
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 512
+					},
+					"frame": {
+						"x": 1684,
+						"y": 1,
+						"w": 559,
+						"h": 512
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 1,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 1,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 1,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 512,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 515,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 518,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 526,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 528,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 512,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 512,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 1023,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 1026,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 1029,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 1037,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 1039,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 1023,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 1023,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 1534,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 1537,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 1540,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 1548,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 1550,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 1534,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 1534,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 2045,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 2048,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 2051,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 2059,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 2061,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 2045,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 2045,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 2556,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 2559,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 2562,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 2570,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 2572,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 2556,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 2556,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 3067,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 3070,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_44.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 3073,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 3081,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 3083,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 3067,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_48.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 3067,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_49.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 3578,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_50.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 3581,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_51.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 3584,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_52.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 3592,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_53.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 3594,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_54.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 3578,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_55.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 3578,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_56.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 4089,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_57.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 4092,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_58.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 4095,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_59.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 4103,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_60.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 4105,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_61.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 4089,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_62.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 4089,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_63.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 4600,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_64.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 4603,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_65.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 4606,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_66.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 4614,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_67.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 4616,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_68.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 4600,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_69.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 4600,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_70.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 5111,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_71.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 5114,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_72.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 5117,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_73.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 5125,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_74.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 5127,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_75.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 5111,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_76.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 5111,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_77.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 5622,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_78.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 5625,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_79.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 5628,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_80.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 5636,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_81.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 5638,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_82.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 5622,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_83.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 5622,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_84.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 6149,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_85.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1,
+						"y": 6660,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_86.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 6147,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_87.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 562,
+						"y": 6658,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_88.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 6139,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_89.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1123,
+						"y": 6650,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_90.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 6136,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_91.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 1684,
+						"y": 6647,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_92.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 6133,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_93.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 6644,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_94.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2245,
+						"y": 7155,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_95.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 6133,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_96.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 6133,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_97.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 6644,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_98.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 3367,
+						"y": 6644,
+						"w": 559,
+						"h": 509
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1_99.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 320,
+						"y": 799,
+						"w": 559,
+						"h": 509
+					},
+					"frame": {
+						"x": 2806,
+						"y": 7155,
+						"w": 559,
+						"h": 509
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:529feb23a4df1537aaf0b741259aa5da:749013b44afe8db1dba4b4dc2096c37c:b3f4ac26244802e762fd93a505fdf527$"
+	}
+}

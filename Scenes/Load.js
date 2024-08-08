@@ -8,8 +8,8 @@ class Load extends Phaser.Scene
     preload()
     {
         // UI
-        this.load.image("button", "assets/UI/blue button.png");
-        this.load.image("buttonPressed", "assets/UI/blue button pressed.png");
+        this.load.image("button", "assets/UI/button.png");
+        this.load.image("buttonPressed", "assets/UI/button pressed.png");
         this.load.image("gameLogo", "assets/UI/gameLogo.png");
         this.load.image("cat", "assets/Characters/cat.png");
         this.load.image("pointer", "assets/UI/pointer.png");
@@ -58,7 +58,6 @@ class Load extends Phaser.Scene
         this.load.image("hammer", "assets/UI/hammer.png");
 
         // particle
-        this.load.image("moneySingleSmall", "assets/UI/moneySingleSmall.png");
         this.load.image("star", "assets/UI/star.png");
         this.load.image("dust", "assets/UI/dust.png");
         this.load.image("party1", "assets/UI/party1.png");
@@ -79,8 +78,15 @@ class Load extends Phaser.Scene
         this.load.json("levelMakerConfig", "LevelConfig/LevelMakerConfig.json");
         this.load.json("moneyConfig", "LevelConfig/MoneyConfig.json");
 
+        // sprite sheets
         // dryer
-        this.load.atlas("dryer", "assets/dryer/dryer.png", "assets/dryer/dryer.json");
+        this.load.atlas("dryer1", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades1/Dryer_upgrades1.png", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades1/Dryer_upgrades1.json");
+        this.load.atlas("dryer2", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades2/Dryer_upgrades2.png", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades2/Dryer_upgrades2.json");
+        this.load.atlas("restingArea1", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades1/RestingArea_upgrades1.png", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades1/RestingArea_upgrades1.json");
+        this.load.atlas("restingArea2", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades2/RestingArea_upgrades2.png", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades2/RestingArea_upgrades2.json");
+        this.load.atlas("shredder1", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades1/Shredder_upgrades1.png", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades1/Shredder_upgrades1.json");
+        this.load.atlas("shredder2", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades2/Shredder_upgrades2.png", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades2/Shredder_upgrades2.json");
+
     }
 
     create()

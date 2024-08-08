@@ -1,0 +1,1616 @@
+{
+	"textures": [
+		{
+			"image": "Dryer_upgrades2.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3974,
+				"h": 4149
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Dryer_upgrades2_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 618,
+						"w": 410,
+						"h": 731
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 410,
+						"h": 731
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 642,
+						"w": 410,
+						"h": 707
+					},
+					"frame": {
+						"x": 1,
+						"y": 734,
+						"w": 410,
+						"h": 707
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 719,
+						"w": 410,
+						"h": 630
+					},
+					"frame": {
+						"x": 1,
+						"y": 1443,
+						"w": 410,
+						"h": 630
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 816,
+						"w": 410,
+						"h": 533
+					},
+					"frame": {
+						"x": 1,
+						"y": 2075,
+						"w": 410,
+						"h": 533
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_68.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 499,
+						"h": 459
+					},
+					"frame": {
+						"x": 1,
+						"y": 2610,
+						"w": 499,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_69.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 497,
+						"h": 459
+					},
+					"frame": {
+						"x": 1,
+						"y": 3071,
+						"w": 497,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_70.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 494,
+						"h": 459
+					},
+					"frame": {
+						"x": 1,
+						"y": 3532,
+						"w": 494,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_67.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 492,
+						"h": 459
+					},
+					"frame": {
+						"x": 497,
+						"y": 3532,
+						"w": 492,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_71.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 492,
+						"h": 459
+					},
+					"frame": {
+						"x": 500,
+						"y": 3071,
+						"w": 492,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 487,
+						"h": 459
+					},
+					"frame": {
+						"x": 991,
+						"y": 3532,
+						"w": 487,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_66.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 487,
+						"h": 459
+					},
+					"frame": {
+						"x": 1480,
+						"y": 1,
+						"w": 487,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 483,
+						"h": 459
+					},
+					"frame": {
+						"x": 994,
+						"y": 1,
+						"w": 483,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_72.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 487,
+						"h": 459
+					},
+					"frame": {
+						"x": 502,
+						"y": 1,
+						"w": 487,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_73.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 483,
+						"h": 459
+					},
+					"frame": {
+						"x": 1969,
+						"y": 1,
+						"w": 483,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 482,
+						"h": 459
+					},
+					"frame": {
+						"x": 2454,
+						"y": 1,
+						"w": 482,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 482,
+						"h": 459
+					},
+					"frame": {
+						"x": 2938,
+						"y": 1,
+						"w": 482,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 482,
+						"h": 459
+					},
+					"frame": {
+						"x": 3422,
+						"y": 1,
+						"w": 482,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_74.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 482,
+						"h": 459
+					},
+					"frame": {
+						"x": 413,
+						"y": 462,
+						"w": 482,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_75.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 482,
+						"h": 459
+					},
+					"frame": {
+						"x": 413,
+						"y": 923,
+						"w": 482,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 481,
+						"h": 459
+					},
+					"frame": {
+						"x": 413,
+						"y": 1384,
+						"w": 481,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_65.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 480,
+						"h": 459
+					},
+					"frame": {
+						"x": 413,
+						"y": 1845,
+						"w": 480,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_64.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 472,
+						"h": 459
+					},
+					"frame": {
+						"x": 502,
+						"y": 2306,
+						"w": 472,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 466,
+						"h": 459
+					},
+					"frame": {
+						"x": 895,
+						"y": 1845,
+						"w": 466,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_63.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 464,
+						"h": 459
+					},
+					"frame": {
+						"x": 896,
+						"y": 1384,
+						"w": 464,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 458,
+						"h": 459
+					},
+					"frame": {
+						"x": 976,
+						"y": 2306,
+						"w": 458,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_62.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 455,
+						"h": 459
+					},
+					"frame": {
+						"x": 994,
+						"y": 2767,
+						"w": 455,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 452,
+						"h": 459
+					},
+					"frame": {
+						"x": 897,
+						"y": 462,
+						"w": 452,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_61.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 447,
+						"h": 459
+					},
+					"frame": {
+						"x": 897,
+						"y": 923,
+						"w": 447,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 446,
+						"h": 459
+					},
+					"frame": {
+						"x": 1346,
+						"y": 923,
+						"w": 446,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 443,
+						"h": 459
+					},
+					"frame": {
+						"x": 1362,
+						"y": 1384,
+						"w": 443,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_44.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 442,
+						"h": 459
+					},
+					"frame": {
+						"x": 1363,
+						"y": 1845,
+						"w": 442,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 442,
+						"h": 459
+					},
+					"frame": {
+						"x": 1436,
+						"y": 2306,
+						"w": 442,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 441,
+						"h": 459
+					},
+					"frame": {
+						"x": 1351,
+						"y": 462,
+						"w": 441,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 440,
+						"h": 459
+					},
+					"frame": {
+						"x": 1451,
+						"y": 2767,
+						"w": 440,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_60.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 440,
+						"h": 459
+					},
+					"frame": {
+						"x": 1794,
+						"y": 462,
+						"w": 440,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 438,
+						"h": 459
+					},
+					"frame": {
+						"x": 1794,
+						"y": 923,
+						"w": 438,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_53.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 437,
+						"h": 459
+					},
+					"frame": {
+						"x": 1807,
+						"y": 1384,
+						"w": 437,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 436,
+						"h": 459
+					},
+					"frame": {
+						"x": 2234,
+						"y": 923,
+						"w": 436,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_50.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 435,
+						"h": 459
+					},
+					"frame": {
+						"x": 2236,
+						"y": 462,
+						"w": 435,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_54.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 435,
+						"h": 459
+					},
+					"frame": {
+						"x": 1807,
+						"y": 1845,
+						"w": 435,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_49.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 434,
+						"h": 459
+					},
+					"frame": {
+						"x": 1880,
+						"y": 2306,
+						"w": 434,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 433,
+						"h": 459
+					},
+					"frame": {
+						"x": 2244,
+						"y": 1845,
+						"w": 433,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_51.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 433,
+						"h": 459
+					},
+					"frame": {
+						"x": 2246,
+						"y": 1384,
+						"w": 433,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_52.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 433,
+						"h": 459
+					},
+					"frame": {
+						"x": 2672,
+						"y": 923,
+						"w": 433,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_55.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 433,
+						"h": 459
+					},
+					"frame": {
+						"x": 2673,
+						"y": 462,
+						"w": 433,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_59.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 433,
+						"h": 459
+					},
+					"frame": {
+						"x": 3108,
+						"y": 462,
+						"w": 433,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3543,
+						"y": 462,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_48.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 432,
+						"h": 459
+					},
+					"frame": {
+						"x": 3107,
+						"y": 923,
+						"w": 432,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_56.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 432,
+						"h": 459
+					},
+					"frame": {
+						"x": 3541,
+						"y": 923,
+						"w": 432,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_57.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 432,
+						"h": 459
+					},
+					"frame": {
+						"x": 1480,
+						"y": 3228,
+						"w": 432,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_58.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 432,
+						"h": 459
+					},
+					"frame": {
+						"x": 1893,
+						"y": 2767,
+						"w": 432,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2316,
+						"y": 2306,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2679,
+						"y": 1845,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2681,
+						"y": 1384,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 1480,
+						"y": 3689,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 1892,
+						"y": 3689,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 1914,
+						"y": 3228,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2304,
+						"y": 3689,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2326,
+						"y": 3228,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2716,
+						"y": 3689,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2327,
+						"y": 2767,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2738,
+						"y": 3228,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3128,
+						"y": 3689,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2728,
+						"y": 2306,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3091,
+						"y": 1845,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3093,
+						"y": 1384,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 2739,
+						"y": 2767,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3150,
+						"y": 3228,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3540,
+						"y": 3689,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3140,
+						"y": 2306,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3503,
+						"y": 1845,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3505,
+						"y": 1384,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3151,
+						"y": 2767,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3562,
+						"y": 3228,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3552,
+						"y": 2306,
+						"w": 410,
+						"h": 459
+					}
+				},
+				{
+					"filename": "Dryer_upgrades2_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 1718,
+						"h": 2326
+					},
+					"spriteSourceSize": {
+						"x": 919,
+						"y": 890,
+						"w": 410,
+						"h": 459
+					},
+					"frame": {
+						"x": 3563,
+						"y": 2767,
+						"w": 410,
+						"h": 459
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:ce7cd68b0341f8861199a3b3d06e5e17:674414dfbf598911412a5aedaee3f7a1:0d9694602762c2927948aa094cd3920a$"
+	}
+}

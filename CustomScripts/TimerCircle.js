@@ -70,8 +70,8 @@ class TimerCircle extends Phaser.GameObjects.Container {
                     // Add the onComplete sprite
                     let money = new Money(this.scene, this.x, this.y, 
                                             this.onCompleteSpriteKey, this.onCompleteGlowKey, 
-                                            0.1, this.onCompleteSpriteScale, 
-                                            0.1, 1, 
+                                            0.1, this.onCompleteSpriteScale,
+                                            0.1, 1,
                                             1,
                                             this.building
                                         );
@@ -80,8 +80,8 @@ class TimerCircle extends Phaser.GameObjects.Container {
                 case 2:
                     let money2 = new Money(this.scene, this.x, this.y, 
                                             this.onCompleteSpriteKey, this.onCompleteGlowKey, 
-                                            0.1, this.onCompleteSpriteScale, 
-                                            0.1, 1, 
+                                            0.1, this.onCompleteSpriteScale,
+                                            0.1, 1,
                                             2,
                                             this.building
                                         );
