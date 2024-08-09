@@ -88,8 +88,17 @@ game.resizeGame = function resizeGame() {
         if (horizontalOffset <= 0) {
             // height always fits, width can be shown or hidden
             game.verticalOffset = 0;
-            canvas.style.transform = `translateX(${horizontalOffset}px)`;
-            canvas.style.marginTop = '0px';
+            //canvas.style.transform = `translateX(${horizontalOffset}px)`;
+            //canvas.style.transform = 'translateY(-1000)';
+
+            // on some ios device using canvas.style.marginTop won't make the hitbox of the sprite change with it
+            // and if we don't change marginTop, there will be a blank space under the canvas, so we need to use translate on canvas
+            // this line is to get the pixel we need to move the canvas down to fill the blank space
+            pixels = parseInt(canvas.style.marginTop, 10) || 0;
+
+            // move the canvas down
+            canvas.style.transform = `translateX(${horizontalOffset}px) translateY(${-pixels}px)`;
+            //canvas.style.marginTop = '0px';
         } else {
             // width always fits, height can be shown or hidden
 
@@ -109,7 +118,6 @@ game.resizeGame = function resizeGame() {
             canvas.style.transform = `translateX(0px) translateY(${verticalOffset}px)`;
 
         }
-
     }
 }
 

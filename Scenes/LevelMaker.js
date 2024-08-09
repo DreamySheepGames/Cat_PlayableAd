@@ -6,8 +6,7 @@ class LevelMaker extends Phaser.Scene
 
     create()
     {
-        game.resizeGame();
-        game.resizeGame();
+        //game.resizeGame();
 
         // json reader
         this.levelMakerData = this.cache.json.get('levelMakerConfig');
@@ -198,8 +197,9 @@ class LevelMaker extends Phaser.Scene
 
     update()
     {
-        // game.scale.pageAlignHorizontally = true;
-        // game.scale.pageAlignVertically = true;
+        //game.scale.pageAlignHorizontally = true;
+        //game.scale.pageAlignVertically = true;
+        
         game.resizeGame();
         //game.scale.refresh();
 
