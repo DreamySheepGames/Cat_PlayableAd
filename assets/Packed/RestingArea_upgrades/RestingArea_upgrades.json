@@ -1,0 +1,4220 @@
+{
+	"textures": [
+		{
+			"image": "RestingArea_upgrades.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"scale": 0.25,
+			"frames": [
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 134
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 142,
+						"h": 134
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 134
+					},
+					"frame": {
+						"x": 145,
+						"y": 1,
+						"w": 142,
+						"h": 134
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 133
+					},
+					"frame": {
+						"x": 289,
+						"y": 1,
+						"w": 142,
+						"h": 133
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 133
+					},
+					"frame": {
+						"x": 433,
+						"y": 1,
+						"w": 142,
+						"h": 133
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 131
+					},
+					"frame": {
+						"x": 577,
+						"y": 1,
+						"w": 142,
+						"h": 131
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 131
+					},
+					"frame": {
+						"x": 721,
+						"y": 1,
+						"w": 142,
+						"h": 131
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 1,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 134,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 134,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 136,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 136,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 137,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 137,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 133,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 266,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 266,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 268,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 268,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 269,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 269,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 265,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 398,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 398,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 400,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 400,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_44.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 401,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 401,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_48.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_49.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_50.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_51.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_52.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 397,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_53.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_54.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 530,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_55.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 530,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_56.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 532,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_57.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 532,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_58.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 533,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_59.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 533,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_60.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_61.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_62.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_63.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_64.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_65.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_66.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 529,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_67.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_68.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 662,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_69.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 662,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_70.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 664,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_71.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 664,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_72.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 665,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_73.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 665,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_74.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_75.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_76.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_77.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_78.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_79.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_80.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 661,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_81.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_82.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 794,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_83.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 794,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_84.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 796,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_85.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 796,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_86.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 797,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_87.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 797,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_88.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_89.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_90.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_91.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_92.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_93.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_94.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 793,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_95.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 929,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_96.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1061,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_97.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1193,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_98.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1325,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades1/RestingArea_upgrades1_99.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1457,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1589,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1721,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1,
+						"y": 1853,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 929,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1061,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1193,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1325,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1457,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1589,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1721,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 145,
+						"y": 1853,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 928,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1060,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1192,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1324,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1456,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1588,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1720,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 289,
+						"y": 1852,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 928,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1060,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1192,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1324,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1456,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1588,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1720,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 433,
+						"y": 1852,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 926,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1058,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1190,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1322,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1454,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1586,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1718,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 577,
+						"y": 1850,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 926,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1058,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1190,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1322,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1454,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1586,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_44.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1718,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 721,
+						"y": 1850,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_48.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_49.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_50.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_51.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1585,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_52.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1717,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_53.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 865,
+						"y": 1849,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_54.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_55.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_56.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_57.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_58.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_59.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_60.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 925,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_61.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_62.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_63.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_64.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_65.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1585,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_66.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1717,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_67.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1009,
+						"y": 1849,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_68.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_69.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_70.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_71.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_72.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_73.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 1057,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_74.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_75.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_76.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_77.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1585,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_78.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1717,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_79.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1153,
+						"y": 1849,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_80.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_81.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_82.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_83.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_84.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 1189,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_85.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_86.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_87.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_88.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_89.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 1321,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_90.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_91.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1585,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_92.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1717,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_93.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1297,
+						"y": 1849,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_94.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_95.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1585,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_96.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1729,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_97.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1873,
+						"y": 1453,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_98.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1585,
+						"w": 142,
+						"h": 130
+					}
+				},
+				{
+					"filename": "RestingArea_upgrades2/RestingArea_upgrades2_99.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 430,
+						"h": 582
+					},
+					"spriteSourceSize": {
+						"x": 79,
+						"y": 199,
+						"w": 142,
+						"h": 130
+					},
+					"frame": {
+						"x": 1441,
+						"y": 1717,
+						"w": 142,
+						"h": 130
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:4e98f4100ae31a7b024238f91fafb05e:b5fa0e019ce57eaa85f1f41370c29102:1c7c6608283caeb37fcbbbe66fbe841d$"
+	}
+}

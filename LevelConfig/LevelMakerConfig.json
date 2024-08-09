@@ -105,15 +105,15 @@
 
         "interBuilding1X": 1600,
         "interBuilding1Y": 1900,
-        "interBuilding1Scale": 1.2,
+        "interBuilding1Scale": 3,
 
         "interBuilding2X": 800,
         "interBuilding2Y": 1900,
-        "interBuilding2Scale": 1.2,
+        "interBuilding2Scale": 2.5,
 
         "interBuilding3X": 1020,
         "interBuilding3Y": 2520,
-        "interBuilding3Scale": 1.1
+        "interBuilding3Scale": 2.5
     },
 
     "isometricTileConfig": {
