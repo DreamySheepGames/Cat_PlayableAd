@@ -17,33 +17,6 @@ class Load extends Phaser.Scene
         // background
         this.load.image("background", "assets/background/BG.png");
 
-        // // ground tiles
-        // this.load.image("ground_grass", "assets/IsometricSprites/Grounds_Roads/ground_grass.png");
-        // this.load.image("ground_grass_damaged", "assets/IsometricSprites/Grounds_Roads/ground_grass_damaged.png");
-
-        // road tiles
-        //this.load.image("road_end_a", "assets/IsometricSprites/Grounds_Roads/road_end_a.png");
-
-        // // buildings
-        // this.load.image("houseSmallBlueA", "assets/IsometricSprites/Buildings/house_small_blue_a.png");
-        // this.load.image("houseSmallYellowA", "assets/IsometricSprites/Buildings/house_small_yellow_a.png");
-        // this.load.image("policeStationB", "assets/IsometricSprites/Buildings/police_station_b.png");
-        // this.load.image("waterTowerA", "assets/IsometricSprites/Buildings/water_tower_a.png");
-        // this.load.image("autoShopA", "assets/IsometricSprites/Buildings/auto_shop_a.png");
-        // this.load.image("churchA", "assets/IsometricSprites/Buildings/church_a.png");
-        //
-        // // interactive building
-        // this.load.image("buildingLevel1", "assets/IsometricSprites/Buildings/building_small_gray_a.png");
-        // this.load.image("buildingLevel2", "assets/IsometricSprites/Buildings/building_tall_blue_a.png");
-
-        // // vegetation
-        // this.load.image("treeCommon01", "assets/IsometricSprites/Vegetation/tree_common_01.png");
-        //
-        // // vehicles
-        // this.load.image("carWhiteA", "assets/IsometricSprites/Vehicles/car_white_a.png");
-        // this.load.image("carYellowB", "assets/IsometricSprites/Vehicles/car_yellow_b.png");
-        // this.load.image("schoolBusB", "assets/IsometricSprites/Vehicles/school_bus_b.png");
-
         // bubble speech
         this.load.image("speechBubble1", "assets/UI/speech_bubble_1.png");
         this.load.image("speechBubble2", "assets/UI/speech_bubble_2.png");
@@ -80,14 +53,6 @@ class Load extends Phaser.Scene
         // json
         this.load.json("levelMakerConfig", "LevelConfig/LevelMakerConfig.json");
         this.load.json("moneyConfig", "LevelConfig/MoneyConfig.json");
-
-        // sprite sheets
-        // this.load.atlas("dryer1", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades1/Dryer_upgrades1.png", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades1/Dryer_upgrades1.json");
-        // this.load.atlas("dryer2", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades2/Dryer_upgrades2.png", "assets/Render_upgrades/Dryer_upgrades/Dryer_upgrades2/Dryer_upgrades2.json");
-        // this.load.atlas("restingArea1", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades1/RestingArea_upgrades1.png", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades1/RestingArea_upgrades1.json");
-        // this.load.atlas("restingArea2", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades2/RestingArea_upgrades2.png", "assets/Render_upgrades/RestingArea_upgrades/RestingArea_upgrades2/RestingArea_upgrades2.json");
-        // this.load.atlas("shredder1", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades1/Shredder_upgrades1.png", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades1/Shredder_upgrades1.json");
-        // this.load.atlas("shredder2", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades2/Shredder_upgrades2.png", "assets/Render_upgrades/Shredder_upgrades/Shredder_upgrades2/Shredder_upgrades2.json");
 
         this.load.atlas("dryer", "assets/Packed/Dryer/Dryer_upgrades.png", "assets/Packed/Dryer/Dryer_upgrades.json")
         this.load.atlas("restingArea", "assets/Packed/RestingArea_upgrades/RestingArea_upgrades.png", "assets/Packed/RestingArea_upgrades/RestingArea_upgrades.json")

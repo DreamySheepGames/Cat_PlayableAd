@@ -190,6 +190,9 @@ class LevelMaker extends Phaser.Scene
 
         // money panel
         this.createMoneyPanel();
+
+        // anchor
+        
     }
 
     update()

@@ -294,7 +294,7 @@ class Building extends Phaser.GameObjects.Container {
     {
         this.scene.tweens.add({
             targets: this.buildingSprite,
-            scale: this.scene.interBuilding1Scale + this.scene.interBuilding1Scale * 0.1,
+            scale: this.scale + this.scale * 0.1,
             duration: this.buildingBounceTweenDuration,
             ease: this.buildingBounceTween,
             onComplete: () => {
@@ -310,7 +310,7 @@ class Building extends Phaser.GameObjects.Container {
     {
         this.scene.tweens.add({
             targets: this.buildingSprite,
-            scale: this.scene.interBuilding1Scale,
+            scale: this.scale,
             duration: this.buildingBounceTweenDuration,
             ease: this.buildingBounceTween,
         });
