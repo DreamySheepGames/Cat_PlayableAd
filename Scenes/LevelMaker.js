@@ -447,7 +447,7 @@ class LevelMaker extends Phaser.Scene
         this.createRain();
 
         this.gameLogo.x = this.scale.width / 2;
-        this.gameLogo.y = this.gameLogo.y + 100;
+        this.gameLogo.y = this.gameLogo.y + 150;
         Align.scaleToGameW(this.gameLogo, 0.25)
 
         this.downloadBtn.x = this.scale.width / 2;

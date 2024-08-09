@@ -8,6 +8,7 @@ class Building extends Phaser.GameObjects.Container {
         this.level = level;
         this.scale = scale;
         this.mode = mode;                   // 1: dryer, 2: resting area, 3: shredder
+        this.spriteSuffix = ".png";
 
         // config parameter
         this.buildingBounceTween = "Cubic.easeOut";
@@ -26,18 +27,18 @@ class Building extends Phaser.GameObjects.Container {
 
         // Define sprites for each level
         this.levelSprites = [
-            "Dryer_upgrades1/Dryer_upgrades1_00", // Sprite key for level 1
-            "Dryer_upgrades2/Dryer_upgrades2_00"  // Sprite key for level 2
+            "Dryer_upgrades1/Dryer_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
+            "Dryer_upgrades2/Dryer_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
         ];
 
         this.levelRestingAreaSprites = [
-            "RestingArea_upgrades1/RestingArea_upgrades1_00", // Sprite key for level 1
-            "RestingArea_upgrades2/RestingArea_upgrades2_00"  // Sprite key for level 2
+            "RestingArea_upgrades1/RestingArea_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
+            "RestingArea_upgrades2/RestingArea_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
         ];
 
         this.levelShredderSprites = [
-            "Shredder_upgrades2/Shredder_upgrades2_00", // Sprite key for level 1
-            "Shredder_upgrades2/Shredder_upgrades2_00"  // Sprite key for level 2
+            "Shredder_upgrades2/Shredder_upgrades2_00" + this.spriteSuffix, // Sprite key for level 1
+            "Shredder_upgrades2/Shredder_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
         ];
 
 

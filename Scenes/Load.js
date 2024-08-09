@@ -7,56 +7,67 @@ class Load extends Phaser.Scene
 
     preload()
     {
+        // dir prefixes
+        this.audioDirPrefix = "assets/Audio/";
+        this.uiDirPrefix = "assets/UI/";
+        this.configDirPrefix = "LevelConfig/";
+
+        // atlas dir prefixed
+        this.dryerAtlasDirPrefix = "assets/Packed/Dryer/Dryer_upgrades.";
+        this.restingAreaAtlasDirPrefix = "assets/Packed/RestingArea_upgrades/RestingArea_upgrades.";
+        this.shredderAtlasDirPrefix = "assets/Packed/Shredder_upgrades/Shredder_upgrades.";
+
         // UI
-        this.load.image("button", "assets/UI/button.png");
-        this.load.image("buttonPressed", "assets/UI/button pressed.png");
-        this.load.image("gameLogo", "assets/UI/gameLogo.png");
+        this.load.image("button", this.uiDirPrefix + "button.png");
+        this.load.image("buttonPressed", this.uiDirPrefix + "button pressed.png");
+        this.load.image("gameLogo", this.uiDirPrefix + "gameLogo.png");
         this.load.image("cat", "assets/Characters/cat.png");
-        this.load.image("pointer", "assets/UI/pointer.png");
+        this.load.image("pointer", this.uiDirPrefix + "pointer.png");
 
         // background
         this.load.image("background", "assets/background/BG.png");
 
         // bubble speech
-        this.load.image("speechBubble1", "assets/UI/speech_bubble_1.png");
-        this.load.image("speechBubble2", "assets/UI/speech_bubble_2.png");
-        this.load.image("speechBubbleCircle", "assets/UI/speechBubbleCircle.png");
-        this.load.image("speechBubbleMoney", "assets/UI/bubbleMoney.png");
+        this.load.image("speechBubble1", this.uiDirPrefix + "speech_bubble_1.png");
+        this.load.image("speechBubble2", this.uiDirPrefix + "speech_bubble_2.png");
+        this.load.image("speechBubbleCircle", this.uiDirPrefix + "speechBubbleCircle.png");
+        this.load.image("speechBubbleMoney", this.uiDirPrefix + "bubbleMoney.png");
 
         // money
-        this.load.image("moneySingle", "assets/UI/moneySingle.png");
-        this.load.image("moneyPlural", "assets/UI/moneyPlural.png");
-        this.load.image("glow", "assets/UI/glow.png");
-        this.load.image("moneyPanel", "assets/UI/moneyPanel.png");
+        this.load.image("moneySingle", this.uiDirPrefix + "moneySingle.png");
+        this.load.image("moneyPlural", this.uiDirPrefix + "moneyPlural.png");
+        this.load.image("glow", this.uiDirPrefix + "glow.png");
+        this.load.image("moneyPanel", this.uiDirPrefix + "moneyPanel.png");
 
         // level up
-        this.load.image("levelUpArrow", "assets/UI/levelUpArrow.png");
-        this.load.image("hammer", "assets/UI/hammer.png");
+        this.load.image("levelUpArrow", this.uiDirPrefix + "levelUpArrow.png");
+        this.load.image("hammer", this.uiDirPrefix + "hammer.png");
 
         // particle
-        this.load.image("star", "assets/UI/star.png");
-        this.load.image("dust", "assets/UI/dust.png");
-        this.load.image("party1", "assets/UI/party1.png");
-        this.load.image("party2", "assets/UI/party2.png");
-        this.load.image("lightColumn", "assets/UI/lightColumn.png");
-        this.load.image("singleDollar", "assets/UI/singleDollar.png");
+        this.load.image("star", this.uiDirPrefix + "star.png");
+        this.load.image("dust", this.uiDirPrefix + "dust.png");
+        this.load.image("party1", this.uiDirPrefix + "party1.png");
+        this.load.image("party2", this.uiDirPrefix + "party2.png");
+        this.load.image("lightColumn", this.uiDirPrefix + "lightColumn.png");
+        this.load.image("singleDollar", this.uiDirPrefix + "singleDollar.png");
 
         // sound
-        this.load.audio("audio_bgTheme", "assets/Audio/BGTheme.ogg");
-        this.load.audio("audio_autoCollectMoney", "assets/Audio/autoCollectMoney.ogg");
-        this.load.audio("audio_building", "assets/Audio/building.ogg");
-        this.load.audio("audio_moneyCollect", "assets/Audio/moneyCollect.ogg");
-        this.load.audio("audio_upgrade", "assets/Audio/upgrade.ogg");
-        this.load.audio("audio_winning", "assets/Audio/winning.ogg");
-        this.load.audio("audio_pop", "assets/Audio/pop.ogg");
+        this.load.audio("audio_bgTheme", this.audioDirPrefix + "BGTheme.ogg");
+        this.load.audio("audio_autoCollectMoney", this.audioDirPrefix + "autoCollectMoney.ogg");
+        this.load.audio("audio_building", this.audioDirPrefix + "building.ogg");
+        this.load.audio("audio_moneyCollect", this.audioDirPrefix + "moneyCollect.ogg");
+        this.load.audio("audio_upgrade", this.audioDirPrefix + "upgrade.ogg");
+        this.load.audio("audio_winning", this.audioDirPrefix + "winning.ogg");
+        this.load.audio("audio_pop", this.audioDirPrefix + "pop.ogg");
 
         // json
-        this.load.json("levelMakerConfig", "LevelConfig/LevelMakerConfig.json");
-        this.load.json("moneyConfig", "LevelConfig/MoneyConfig.json");
+        this.load.json("levelMakerConfig", this.configDirPrefix + "LevelMakerConfig.json");
+        this.load.json("moneyConfig", this.configDirPrefix + "MoneyConfig.json");
 
-        this.load.atlas("dryer", "assets/Packed/Dryer/Dryer_upgrades.png", "assets/Packed/Dryer/Dryer_upgrades.json")
-        this.load.atlas("restingArea", "assets/Packed/RestingArea_upgrades/RestingArea_upgrades.png", "assets/Packed/RestingArea_upgrades/RestingArea_upgrades.json")
-        this.load.atlas("shredder", "assets/Packed/Shredder_upgrades/Shredder_upgrades.png", "assets/Packed/Shredder_upgrades/Shredder_upgrades.json")
+        // atlas
+        this.load.atlas("dryer", this.dryerAtlasDirPrefix + "png", this.dryerAtlasDirPrefix + "json");
+        this.load.atlas("restingArea", this.restingAreaAtlasDirPrefix + "png", this.restingAreaAtlasDirPrefix + "json");
+        this.load.atlas("shredder", this.shredderAtlasDirPrefix + "png", this.shredderAtlasDirPrefix + "json");
 
     }
 
