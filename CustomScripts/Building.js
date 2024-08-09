@@ -119,7 +119,7 @@ class Building extends Phaser.GameObjects.Container {
             this.scene.anims.create({
                 key: 'shredderNormal',
                 frames: this.scene.anims.generateFrameNames('shredder', {
-                    prefix: 'Shredder_upgrades2/Shredder_upgrades2_',
+                    prefix: 'Shredder_upgrades1/Shredder_upgrades1_',
                     suffix: ".png",
                     start: 0,
                     end: 59,
