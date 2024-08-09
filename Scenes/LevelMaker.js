@@ -192,7 +192,8 @@ class LevelMaker extends Phaser.Scene
         this.createMoneyPanel();
 
         // anchor
-        
+
+
     }
 
     update()
@@ -200,7 +201,7 @@ class LevelMaker extends Phaser.Scene
         // game.scale.pageAlignHorizontally = true;
         // game.scale.pageAlignVertically = true;
         game.resizeGame();
-        game.scale.refresh();
+        //game.scale.refresh();
 
         this.checkBuilding2();
         this.checkBuilding3();

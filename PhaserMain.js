@@ -107,6 +107,7 @@ game.resizeGame = function resizeGame() {
 
             // Center the canvas both horizontally and vertically
             canvas.style.transform = `translateX(0px) translateY(${verticalOffset}px)`;
+
         }
 
     }
