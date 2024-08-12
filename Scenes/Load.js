@@ -52,13 +52,13 @@ class Load extends Phaser.Scene
         this.load.image("singleDollar", this.uiDirPrefix + "singleDollar.png");
 
         // sound
-        this.load.audio("audio_bgTheme", this.audioDirPrefix + "BGTheme.ogg");
-        this.load.audio("audio_autoCollectMoney", this.audioDirPrefix + "autoCollectMoney.ogg");
-        this.load.audio("audio_building", this.audioDirPrefix + "building.ogg");
-        this.load.audio("audio_moneyCollect", this.audioDirPrefix + "moneyCollect.ogg");
-        this.load.audio("audio_upgrade", this.audioDirPrefix + "upgrade.ogg");
-        this.load.audio("audio_winning", this.audioDirPrefix + "winning.ogg");
-        this.load.audio("audio_pop", this.audioDirPrefix + "pop.ogg");
+        this.load.audio("audio_bgTheme", this.audioDirPrefix + "BGTheme.mp3");
+        this.load.audio("audio_autoCollectMoney", this.audioDirPrefix + "autoCollectMoney.mp3");
+        this.load.audio("audio_building", this.audioDirPrefix + "building.mp3");
+        this.load.audio("audio_moneyCollect", this.audioDirPrefix + "moneyCollect.mp3");
+        this.load.audio("audio_upgrade", this.audioDirPrefix + "upgrade.mp3");
+        this.load.audio("audio_winning", this.audioDirPrefix + "winning.mp3");
+        this.load.audio("audio_pop", this.audioDirPrefix + "pop.mp3");
 
         // json
         this.load.json("levelMakerConfig", this.configDirPrefix + "LevelMakerConfig.json");
