@@ -97,10 +97,9 @@ game.resizeGame = function resizeGame() {
 
             // move the canvas down
             canvas.style.transform = `translateX(${horizontalOffset}px) translateY(${-blankPixels}px)`;
-            //canvas.style.marginTop = '0px';
+
         } else {
             // width always fits, height can be shown or hidden
-
             // Switch to centering both horizontally and vertically
             const scaleRatioWidth = windowWidth / gameWidth;
             game.scaleRatio = scaleRatioWidth;
@@ -116,7 +115,6 @@ game.resizeGame = function resizeGame() {
             var blankPixels = parseInt(canvas.style.marginTop, 10) || 0;
 
             // Center the canvas both horizontally and vertically
-            //canvas.style.transform = `translateX(0px) translateY(${verticalOffset}px)`;
             canvas.style.transform = `translateX(0px) translateY(${verticalOffset - blankPixels}px)`;
         }
     }

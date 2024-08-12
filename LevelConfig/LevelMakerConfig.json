@@ -79,12 +79,12 @@
         "moneyIconScale": 1.8,
 
         "moneyUnitXFactor": 250,
-        "moneyUnitYFactor": 70,
+        "moneyUnitYFactor": 180,
 
         "moneyLabelXFactor": 150,
-        "moneyLabelYFactor": 70,
+        "moneyLabelYFactor": 180,
 
-        "moneyFont": "bold 150px Arial",
+        "moneyFont": "300px monogram",
         "moneyFontColor": "#278664"
     },
 
@@ -105,15 +105,15 @@
 
         "interBuilding1X": 1600,
         "interBuilding1Y": 1900,
-        "interBuilding1Scale": 2.8,
+        "interBuilding1Scale": 1.7,
 
         "interBuilding2X": 800,
         "interBuilding2Y": 1900,
-        "interBuilding2Scale": 2.4,
+        "interBuilding2Scale": 1.7,
 
         "interBuilding3X": 1020,
         "interBuilding3Y": 2520,
-        "interBuilding3Scale": 2.4
+        "interBuilding3Scale": 1.75
     },
 
     "isometricTileConfig": {

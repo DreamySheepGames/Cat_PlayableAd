@@ -27,18 +27,18 @@ class Building extends Phaser.GameObjects.Container {
 
         // Define sprites for each level
         this.levelSprites = [
-            "Dryer_upgrades1/Dryer_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
-            "Dryer_upgrades2/Dryer_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
+            "Dryer_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
+            "Dryer_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
         ];
 
         this.levelRestingAreaSprites = [
-            "RestingArea_upgrades1/RestingArea_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
-            "RestingArea_upgrades2/RestingArea_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
+            "RestingArea_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
+            "RestingArea_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
         ];
 
         this.levelShredderSprites = [
-            "Shredder_upgrades2/Shredder_upgrades2_00" + this.spriteSuffix, // Sprite key for level 1
-            "Shredder_upgrades2/Shredder_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
+            "Shredder_upgrades1_00" + this.spriteSuffix, // Sprite key for level 1
+            "Shredder_upgrades2_00" + this.spriteSuffix  // Sprite key for level 2
         ];
 
 
@@ -48,8 +48,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the initial animation (frames 0 to 29)
             this.scene.anims.create({
                 key: 'dryerNormal',
-                frames: this.scene.anims.generateFrameNames('dryer', {
-                    prefix: 'Dryer_upgrades1/Dryer_upgrades1_',
+                frames: this.scene.anims.generateFrameNames('dryer1', {
+                    prefix: 'Dryer_upgrades1_',
                     suffix: ".png",
                     start: 0,
                     end: 43,
@@ -62,8 +62,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the initial upgrade animation (frames 0 to 29)
             this.scene.anims.create({
                 key: 'dryerUpgraded',
-                frames: this.scene.anims.generateFrameNames('dryer', {
-                    prefix: 'Dryer_upgrades2/Dryer_upgrades2_',
+                frames: this.scene.anims.generateFrameNames('dryer2', {
+                    prefix: 'Dryer_upgrades2_',
                     suffix: ".png",
                     start: 0,
                     end: 29,
@@ -76,8 +76,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the upgrade loop animation (frames 30 to 75)
             this.scene.anims.create({
                 key: 'dryerUpgradedLoop',
-                frames: this.scene.anims.generateFrameNames('dryer', {
-                    prefix: 'Dryer_upgrades2/Dryer_upgrades2_',
+                frames: this.scene.anims.generateFrameNames('dryer2', {
+                    prefix: 'Dryer_upgrades2_',
                     suffix: ".png",
                     start: 30,
                     end: 75,
@@ -90,8 +90,8 @@ class Building extends Phaser.GameObjects.Container {
             // RESTING AREA
             this.scene.anims.create({
                 key: 'restingAreaNormal',
-                frames: this.scene.anims.generateFrameNames('restingArea', {
-                    prefix: 'RestingArea_upgrades1/RestingArea_upgrades1_',
+                frames: this.scene.anims.generateFrameNames('restingArea1', {
+                    prefix: 'RestingArea_upgrades1_',
                     suffix: ".png",
                     start: 0,
                     end: 99,
@@ -104,8 +104,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the upgrade loop animation (frames 30 to 75)
             this.scene.anims.create({
                 key: 'restingAreaUpgradedLoop',
-                frames: this.scene.anims.generateFrameNames('restingArea', {
-                    prefix: 'RestingArea_upgrades2/RestingArea_upgrades2_',
+                frames: this.scene.anims.generateFrameNames('restingArea2', {
+                    prefix: 'RestingArea_upgrades2_',
                     suffix: ".png",
                     start: 0,
                     end: 99,
@@ -119,8 +119,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the initial animation (frames 0 to 29)
             this.scene.anims.create({
                 key: 'shredderNormal',
-                frames: this.scene.anims.generateFrameNames('shredder', {
-                    prefix: 'Shredder_upgrades1/Shredder_upgrades1_',
+                frames: this.scene.anims.generateFrameNames('shredder1', {
+                    prefix: 'Shredder_upgrades1_',
                     suffix: ".png",
                     start: 0,
                     end: 59,
@@ -133,8 +133,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the initial upgrade animation (frames 0 to 29)
             this.scene.anims.create({
                 key: 'shredderUpgraded',
-                frames: this.scene.anims.generateFrameNames('shredder', {
-                    prefix: 'Shredder_upgrades2/Shredder_upgrades2_',
+                frames: this.scene.anims.generateFrameNames('shredder2', {
+                    prefix: 'Shredder_upgrades2_',
                     suffix: ".png",
                     start: 0,
                     end: 35,
@@ -147,8 +147,8 @@ class Building extends Phaser.GameObjects.Container {
             // Create the upgrade loop animation (frames 30 to 75)
             this.scene.anims.create({
                 key: 'shredderUpgradedLoop',
-                frames: this.scene.anims.generateFrameNames('shredder', {
-                    prefix: 'Shredder_upgrades2/Shredder_upgrades2_',
+                frames: this.scene.anims.generateFrameNames('shredder2', {
+                    prefix: 'Shredder_upgrades2_',
                     suffix: ".png",
                     start: 36,
                     end: 139,
@@ -165,22 +165,22 @@ class Building extends Phaser.GameObjects.Container {
         switch (this.mode)
         {
             case 1:
-                this.buildingSprite = scene.add.sprite(0, 0, 'dryer', this.levelSprites[this.level - 1]).setScale(1).setOrigin(0.65, 0.6);
+                this.buildingSprite = scene.add.sprite(0, 0, 'dryer1', this.levelSprites[this.level - 1]).setScale(1).setOrigin(0.65, 0.6);
                 break;
 
             case 2:
-                this.buildingSprite = scene.add.sprite(0, 0, 'restingArea', this.levelRestingAreaSprites[this.level - 1]).setScale(1).setOrigin(0.35, 0.6);
+                this.buildingSprite = scene.add.sprite(0, 0, 'restingArea1', this.levelRestingAreaSprites[this.level - 1]).setScale(1).setOrigin(0.35, 0.6);
                 break;
 
             case 3:
-                this.buildingSprite = scene.add.sprite(0, 0, 'shredder', this.levelShredderSprites[this.level - 1]).setScale(1).setOrigin(0.4, 0.8);
+                this.buildingSprite = scene.add.sprite(0, 0, 'shredder1', this.levelShredderSprites[this.level - 1]).setScale(1).setOrigin(0.4, 0.8);
                 break;
         }
 
         this.add(this.buildingSprite);
         this.scene.tweens.add({
             targets: this.buildingSprite,
-            scale: this.scale,
+            scale: this.scale - 0.2,
             duration: 300,
             ease: "Back.easeOut",
         });
@@ -277,6 +277,7 @@ class Building extends Phaser.GameObjects.Container {
                     this.buildingSprite.play("shredderUpgraded");
                     break;
             }
+
             this.scene.tweens.add({
                 targets: this.buildingSprite,
                 scale: this.scale,
