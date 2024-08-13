@@ -143,8 +143,9 @@ class LevelMaker extends Phaser.Scene
         });
 
         // Background
-        this.background = this.add.image(this.scale.width / 2 + 45, this.scale.height / 2, "background");
-        this.background.setScale(1.38);
+        this.createBackground();
+        // this.background = this.add.image(this.scale.width / 2 + 45, this.scale.height / 2, "background");
+        // this.background.setScale(1.38);
 
         // interactable buildings
         // Buliding(scene, x, y, scale, level = 1, mode = 1)
@@ -193,6 +194,24 @@ class LevelMaker extends Phaser.Scene
         // anchor
 
 
+    }
+
+    createBackground() {
+        this.background = this.add.image(0, 0, "background");
+
+        const gameAspectRatio = this.scale.width / this.scale.height;
+        const backgroundAspectRatio = this.background.width / this.background.height;
+
+        let scaleFactor;
+        if (gameAspectRatio > backgroundAspectRatio) {
+            scaleFactor = this.scale.height / this.background.height;
+        } else {
+            scaleFactor = this.scale.width / this.background.width;
+        }
+
+        this.background.setScale(scaleFactor);
+
+        this.background.setPosition(this.scale.width / 2, this.scale.height / 2);
     }
 
     update()

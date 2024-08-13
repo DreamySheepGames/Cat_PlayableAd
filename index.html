@@ -6,6 +6,7 @@
             body {
                 margin: 0;
                 background-color: #000; /* Black background */
+                font-family: monogram, sans-serif; /* Add a fallback font */
             }
         </style>
 
@@ -13,11 +14,11 @@
             @font-face {
                 font-family: monogram;
                 src: url('assets/Fonts/monogram.ttf');
-                font-weight:400;
-                font-weight:normal;
+                font-weight: 400;
+                font-style: normal;
             }
         </style>
-        <div style="font-family:monogram; position:absolute; left:-1000px; visibility:hidden;">.</div>
+        <div style="font-family:monogram, serif; position:absolute; left:-1000px; visibility:hidden;">.</div>
         
         <script type="text/javascript" src="phaser.min.js"></script>
 
