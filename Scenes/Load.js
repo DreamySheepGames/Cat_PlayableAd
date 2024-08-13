@@ -65,30 +65,14 @@ class Load extends Phaser.Scene
         this.load.json("moneyConfig", this.configDirPrefix + "MoneyConfig.json");
 
         // atlas
-        // this.load.atlas("dryer", this.dryerAtlasDirPrefix + "png", this.dryerAtlasDirPrefix + "json");
-        // this.load.atlas("restingArea", this.restingAreaAtlasDirPrefix + "png", this.restingAreaAtlasDirPrefix + "json");
-        // this.load.atlas("shredder", this.shredderAtlasDirPrefix + "png", this.shredderAtlasDirPrefix + "json");
         this.load.atlas("dryer1", "assets/Pack_v2/Dryer_upgrades/Dryer_upgrades1.png", "assets/Pack_v2/Dryer_upgrades/Dryer_upgrades1.json");
         this.load.atlas("dryer2", "assets/Pack_v2/Dryer_upgrades/Dryer_upgrades2.png", "assets/Pack_v2/Dryer_upgrades/Dryer_upgrades2.json");
 
-        //this.load.atlas("restingArea1_0", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades1-0.png", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades1.json");
-        //this.load.atlas("restingArea1_1", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades1-1.png", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades1.json");
-
         this.load.multiatlas('restingArea1', 'assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades1.json', 'assets/Pack_v2/RestingArea_upgrades');
-
-        //this.load.atlas("restingArea2_0", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades2-0.png", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades2.json");
-        //this.load.atlas("restingArea2_1", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades2-1.png", "assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades2.json");
-
         this.load.multiatlas('restingArea2', 'assets/Pack_v2/RestingArea_upgrades/RestingArea_upgrades2.json', 'assets/Pack_v2/RestingArea_upgrades');
 
         this.load.atlas("shredder1", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades1.png", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades1.json");
         this.load.atlas("shredder2", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2-0.png", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2.json");
-
-        //this.load.atlas("shredder_Upgrades2_0", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2_0.png", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2.json");
-        //this.load.atlas("shredder_Upgrades2_1", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2_1.png", "assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2.json");
-
-        // this.load.multiatlas('shredder2', 'assets/Pack_v2/Shredder_upgrades/Shredder_upgrades2.json', 'assets/Pack_v2/Shredder_upgrades');
-
     }
 
     create()
