@@ -9,8 +9,8 @@ class Money extends Phaser.GameObjects.Container {
 
         this.scene = scene;
         this.mode = mode;
-        this.sendMoneyToX = this.scene.moneyIconX;
-        this.sendMoneyToY = this.scene.moneyIconY;
+        this.sendMoneyToX = this.scene.moneyIcon.x;
+        this.sendMoneyToY = this.scene.moneyIcon.y;
         this.scaleValue = scaleTo;
         this.building = building;
 

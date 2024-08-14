@@ -178,14 +178,28 @@ class Building extends Phaser.GameObjects.Container {
         }
 
         this.add(this.buildingSprite);
-        this.scene.tweens.add({
-            targets: this.buildingSprite,
-            scale: this.scale - 0.2,
-            duration: 300,
-            ease: "Back.easeOut",
-        });
+        if (this.mode == 2)     // currently resting area is the only building that level 1 has the same dimension size as level 2
+        {
 
-        // Play animation based on the level of the buildings
+            this.scene.tweens.add({
+                targets: this.buildingSprite,
+                scale: this.scale,
+                duration: 300,
+                ease: "Back.easeOut",
+            });
+        }
+        else
+        {
+            this.scene.tweens.add({
+                targets: this.buildingSprite,
+                scale: this.scale - 0.25,
+                duration: 300,
+                ease: "Back.easeOut",
+            });
+        }
+
+
+        // Play animation based on the mode of the buildings
         switch (this.mode)
         {
             case 1:
@@ -194,7 +208,6 @@ class Building extends Phaser.GameObjects.Container {
 
             case 2:
                 this.buildingSprite.play('restingAreaNormal');
-                //this.buildingSprite = scene.add.sprite(0, 0, 'restingArea1', "RestingArea_upgrades1_00").setScale(1).setOrigin(0.65, 0.6);
                 break;
 
             case 3:

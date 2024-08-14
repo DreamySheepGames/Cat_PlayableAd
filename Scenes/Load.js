@@ -12,11 +12,6 @@ class Load extends Phaser.Scene
         this.uiDirPrefix = "assets/UI/";
         this.configDirPrefix = "LevelConfig/";
 
-        // atlas dir prefixed
-        this.dryerAtlasDirPrefix = "assets/Packed/Dryer/Dryer_upgrades.";
-        this.restingAreaAtlasDirPrefix = "assets/Packed/RestingArea_upgrades/RestingArea_upgrades.";
-        this.shredderAtlasDirPrefix = "assets/Packed/Shredder_upgrades/Shredder_upgrades.";
-
         // UI
         this.load.image("button", this.uiDirPrefix + "button.png");
         this.load.image("buttonPressed", this.uiDirPrefix + "button pressed.png");
@@ -28,9 +23,9 @@ class Load extends Phaser.Scene
         this.load.image("background", "assets/background/BG.png");
 
         // bubble speech
+        this.load.image("speechBubble", this.uiDirPrefix + "speechBubble.png");
         this.load.image("speechBubble1", this.uiDirPrefix + "speech_bubble_1.png");
         this.load.image("speechBubble2", this.uiDirPrefix + "speech_bubble_2.png");
-        //this.load.image("speechBubbleCircle", this.uiDirPrefix + "speechBubbleCircle.png");
         this.load.image("speechBubbleMoney", this.uiDirPrefix + "bubbleMoney.png");
 
         // money

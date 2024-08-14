@@ -6,8 +6,6 @@ class LevelMaker extends Phaser.Scene
 
     create()
     {
-        //game.resizeGame();
-
         // json reader
         this.levelMakerData = this.cache.json.get('levelMakerConfig');
 
@@ -63,8 +61,6 @@ class LevelMaker extends Phaser.Scene
 
         var pointerXFactor = this.levelMakerData.pointer.xFactor;
         this.pointerX = this.speechBubble1X + pointerXFactor;
-        // var pointerYFactor = this.levelMakerData.pointer.yFactor;
-        // this.pointerY = this.scale.height / pointerYFactor;
         this.pointerY = this.levelMakerData.pointer.y;
         this.pointerScaleStart = this.levelMakerData.pointer.scaleStart;
         this.pointerScaleStartDuration = this.levelMakerData.pointer.scaleStartDuration;
@@ -156,10 +152,32 @@ class LevelMaker extends Phaser.Scene
 
         // UI
         this.cat;
-        this.bubbleSpeech1;
-        this.bubbleSpeech2;
-        this.bubbleMoney;
         this.pointer;
+
+        this.speechBubble1 = this.add.container(this.speechBubble1X, this.speechBubble1Y);
+        this.speechBubble2 = this.add.container(this.speechBubble2X, this.speechBubble2Y);
+        this.speechBubble1Content = ["Hi, let's try to build", "   the office first!"];
+        this.speechBubble2Content = ["Let's go to the", "    next city!"];
+
+        // speech bubble configuration
+        this.speechBubble1Width = this.levelMakerData.speechBubble1.width;
+        this.speechBubble1Height = this.levelMakerData.speechBubble1.height;
+        this.speechBubble1LeftWidth = this.levelMakerData.speechBubble1.leftWidth;
+        this.speechBubble1RightWidth = this.levelMakerData.speechBubble1.rightWidth;
+        this.speechBubble1TopHeight = this.levelMakerData.speechBubble1.topHeight;
+        this.speechBubble1BottomHeight = this.levelMakerData.speechBubble1.bottomHeight;
+        this.speechBubble1TextYDelta = this.levelMakerData.speechBubble1.textYDelta;
+
+        this.speechBubble2Width = this.levelMakerData.speechBubble2.width;
+        this.speechBubble2Height = this.levelMakerData.speechBubble2.height;
+        this.speechBubble2LeftWidth = this.levelMakerData.speechBubble2.leftWidth;
+        this.speechBubble2RightWidth = this.levelMakerData.speechBubble2.rightWidth;
+        this.speechBubble2TopHeight = this.levelMakerData.speechBubble2.topHeight;
+        this.speechBubble2BottomHeight = this.levelMakerData.speechBubble2.bottomHeight;
+        this.speechBubble2TextYDelta = this.levelMakerData.speechBubble2.textYDelta;
+
+        this.speechBubbleTextFont = "60px ThaleahFat";
+        this.speechBubbleTextColor = "#000000"
 
         // Create a UI layer
         this.uiLayer = this.add.container(0, 0);
@@ -216,11 +234,7 @@ class LevelMaker extends Phaser.Scene
 
     update()
     {
-        //game.scale.pageAlignHorizontally = true;
-        //game.scale.pageAlignVertically = true;
-        
         game.resizeGame();
-        //game.scale.refresh();
 
         this.checkBuilding2();
         this.checkBuilding3();
@@ -324,7 +338,26 @@ class LevelMaker extends Phaser.Scene
             yoyo: false,
             // when done tweening the cat then create and tween the size of the speech bubble 1 and the pointer
             onComplete: () => {
-                this.speechBubble1 = this.add.sprite(this.speechBubble1X, this.speechBubble1Y, "speechBubble1").setScale(this.speechBubble1ScaleFrom);
+                // add speech bubble 1 sprite
+                this.speechBubble1Sprite = this.add.nineslice(0, 0, "speechBubble", 0,
+                                                                this.speechBubble1Width,
+                                                                this.speechBubble1Height,
+                                                                this.speechBubble1LeftWidth,
+                                                                this.speechBubble1RightWidth,
+                                                                this.speechBubble1TopHeight,
+                                                                this.speechBubble1BottomHeight);
+
+                // add speech bubble 1 text
+                this.speechBubble1Text = this.add.text(0,
+                                                    this.speechBubble1TextYDelta,
+                                                    this.speechBubble1Content,
+                                                    {font: this.speechBubbleTextFont, fill: this.speechBubbleTextColor});
+
+                this.speechBubble1Sprite.setOrigin(0.5, 0.5);
+                this.speechBubble1Text.setOrigin(0.5, 0.5);
+                this.speechBubble1.add(this.speechBubble1Sprite);
+                this.speechBubble1.add(this.speechBubble1Text);
+
                 this.uiLayer.add(this.speechBubble1);
                 this.tweens.add({
                     targets: this.speechBubble1,
@@ -334,11 +367,11 @@ class LevelMaker extends Phaser.Scene
                     onComplete: () => {
                         this.createPointer();
 
-                        this.speechBubble1.setInteractive();
+                        this.speechBubble1Sprite.setInteractive();
         
                         // Event listener to hide all elements when tapped
                         //this.input.on('pointerdown', () => {
-                        this.speechBubble1.on('pointerdown', () => {
+                        this.speechBubble1Sprite.on('pointerdown', () => {
                             this.darkOverlay.setVisible(false);
                             this.cat.setVisible(false);
                             this.speechBubble1.setVisible(false);
@@ -494,7 +527,26 @@ class LevelMaker extends Phaser.Scene
             yoyo: false,
             // when done tweening the cat then create and tween the size of the speech bubble 1 and the pointer
             onComplete: () => {
-                this.speechBubble2 = this.add.sprite(this.speechBubble2X, this.speechBubble2Y, "speechBubble2").setScale(this.speechBubble2ScaleFrom);
+                // add speech bubble 2 sprite
+                this.speechBubble2Sprite = this.add.nineslice(0, 0, "speechBubble", 0,
+                    this.speechBubble2Width,
+                    this.speechBubble2Height,
+                    this.speechBubble2LeftWidth,
+                    this.speechBubble2RightWidth,
+                    this.speechBubble2TopHeight,
+                    this.speechBubble2BottomHeight);
+
+                // add speech bubble 2 text
+                this.speechBubble2Text = this.add.text(0,
+                    this.speechBubble2TextYDelta,
+                    this.speechBubble2Content,
+                    {font: this.speechBubbleTextFont, fill: this.speechBubbleTextColor});
+
+                this.speechBubble2Sprite.setOrigin(0.5, 0.5);
+                this.speechBubble2Text.setOrigin(0.5, 0.5);
+                this.speechBubble2.add(this.speechBubble2Sprite);
+                this.speechBubble2.add(this.speechBubble2Text);
+
                 this.uiLayer.add(this.speechBubble2);
                 this.tweens.add({
                     targets: this.speechBubble2,
