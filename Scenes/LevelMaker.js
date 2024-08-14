@@ -156,8 +156,8 @@ class LevelMaker extends Phaser.Scene
 
         this.speechBubble1 = this.add.container(this.speechBubble1X, this.speechBubble1Y);
         this.speechBubble2 = this.add.container(this.speechBubble2X, this.speechBubble2Y);
-        this.speechBubble1Content = ["Hi, let's try to build", "   the office first!"];
-        this.speechBubble2Content = ["Let's go to the", "    next city!"];
+        this.speechBubble1Content = this.levelMakerData.speechBubble1.content;
+        this.speechBubble2Content = this.levelMakerData.speechBubble2.content;
 
         // speech bubble configuration
         this.speechBubble1Width = this.levelMakerData.speechBubble1.width;
@@ -176,8 +176,8 @@ class LevelMaker extends Phaser.Scene
         this.speechBubble2BottomHeight = this.levelMakerData.speechBubble2.bottomHeight;
         this.speechBubble2TextYDelta = this.levelMakerData.speechBubble2.textYDelta;
 
-        this.speechBubbleTextFont = "60px ThaleahFat";
-        this.speechBubbleTextColor = "#000000"
+        this.speechBubbleTextFont = this.levelMakerData.speechBubble1.textFont;
+        this.speechBubbleTextColor = this.levelMakerData.speechBubble1.textColor;
 
         // Create a UI layer
         this.uiLayer = this.add.container(0, 0);

@@ -37,22 +37,26 @@
         "rightWidth": 20,
         "topHeight": 20,
         "bottomHeight": 80,
-        "textYDelta": -40
+        "content": ["Hi, let's try to build", "   the office first!"],
+        "textYDelta": -40,
+        "textFont": "60px ThaleahFat",
+        "textColor": "#000000"
     },
 
     "speechBubble2": {
-        "x": 1000,
+        "x": 1150,
         "yFactor": 1.6,
         "scaleFrom": 0.1,
         "scaleTo": 1.8,
         "scaleDuration": 500,
         "speechBubbleSizeTweenEase": "Back.easeOut",
-        "width": 500,
+        "width": 700,
         "height": 220,
         "leftWidth": 420,
         "rightWidth": 20,
         "topHeight": 20,
         "bottomHeight": 80,
+        "content": ["Let's go to the next city!"],
         "textYDelta": -40
     },
 
@@ -117,15 +121,15 @@
     "interBuildings": {
         "housePrice": 400,
 
-        "interBuilding1X": 1600,
+        "interBuilding1X": 1500,
         "interBuilding1Y": 1900,
         "interBuilding1Scale": 1.7,
 
-        "interBuilding2X": 800,
+        "interBuilding2X": 750,
         "interBuilding2Y": 1900,
         "interBuilding2Scale": 2,
 
-        "interBuilding3X": 1020,
+        "interBuilding3X": 970,
         "interBuilding3Y": 2520,
         "interBuilding3Scale": 2
     }
