@@ -37,7 +37,7 @@
         "rightWidth": 20,
         "topHeight": 20,
         "bottomHeight": 80,
-        "content": ["Hi, let's try to build", "   the office first!"],
+        "content": [" Hi, let's try to build", "   the office first!"],
         "textYDelta": -40,
         "textFont": "60px ThaleahFat",
         "textColor": "#000000"
@@ -56,7 +56,7 @@
         "rightWidth": 20,
         "topHeight": 20,
         "bottomHeight": 80,
-        "content": ["Let's go to the next city!"],
+        "content": [" Let's go to the next city!"],
         "textYDelta": -40
     },
 
