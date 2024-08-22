@@ -183,6 +183,17 @@ class Money extends Phaser.GameObjects.Container {
         if (scene) {
             let moneyToSend = scene.add.image(this.x, this.y, "moneySingle").setScale(this.scaleValue);
 
+            // if (game.verticalOffset >= 0)
+            // {
+            //     this.sendMoneyToX = scene.moneyIcon.x;
+            //     this.sendMoneyToY = scene.moneyIcon.y;
+            // }
+            // else
+            // {
+            //     this.sendMoneyToX = 1700;
+            //     this.sendMoneyToY = scene.downloadBtnY - game.verticalOffset - 170;
+            // }
+
             scene.tweens.add({
                 targets: moneyToSend,
                 x: this.sendMoneyToX,

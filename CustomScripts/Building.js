@@ -224,20 +224,20 @@ class Building extends Phaser.GameObjects.Container {
         });
 
         // PARTICLE FX
-        this.starEmitter = this.scene.add.particles(x, y - 400, "star", {
+        this.starEmitter = this.scene.add.particles(x, y - 200, "star", {
             lifespan: 800,
-            speed: { min: 450, max: 650 },
-            scale: { start: 0.1, end: 0.4 },
+            speed: { min: 150, max: 350 },
+            scale: { start: 0.1, end: 0.25 },
             alpha: { start: 1, end: 0.2 },
             blendMode: Phaser.BlendModes.NORMAL,
             duration: 470,
             emitting: false
         });
 
-        this.moneyEmitter = this.scene.add.particles(x, y - 400, "singleDollar", {
+        this.moneyEmitter = this.scene.add.particles(x, y - 200, "singleDollar", {
             lifespan: 800,
-            speed: { min: 150, max: 650 },
-            scale: { start: 0.1, end: 1 },
+            speed: { min: 150, max: 350 },
+            scale: { start: 0.1, end: 0.5 },
             alpha: { start: 1, end: 0.2 },
             blendMode: Phaser.BlendModes.NORMAL,
             rotate: { min: 0, max: 360 },
@@ -245,12 +245,12 @@ class Building extends Phaser.GameObjects.Container {
         });
 
         this.lightEmitter = this.scene.add.particles(0, 0, "lightColumn" ,{
-            x: { min: this.x - 500, max: this.x + 400 },
-            y: { min: this.y - 500, max: this.y + 200 },
+            x: { min: this.x - 250, max: this.x + 200 },
+            y: { min: this.y - 250, max: this.y + 100 },
             quantity: 1,
             lifespan: 400,
-            speedY: { min: -200, max: -600 },
-            scale: { min: 0.3, max: 1 },
+            speedY: { min: -100, max: -300 },
+            scale: { min: 0.15, max: 0.7 },
             alpha: { start: 0.9, end: 0.1 },
             blendMode: Phaser.BlendModes.NORMAL,
             frequency: -1 // Disable automatic emission

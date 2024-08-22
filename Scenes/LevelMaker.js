@@ -209,9 +209,8 @@ class LevelMaker extends Phaser.Scene
         // money panel
         this.createMoneyPanel();
 
-        // anchor
-
-
+        // camera
+        this.camera = this.cameras.main;
     }
 
     createBackground() {
@@ -235,6 +234,7 @@ class LevelMaker extends Phaser.Scene
     update()
     {
         game.resizeGame();
+        //this.modifyUI();
 
         this.checkBuilding2();
         this.checkBuilding3();
@@ -487,6 +487,8 @@ class LevelMaker extends Phaser.Scene
 
     createCatAtTheEnd()
     {
+        this.theEnd = true;
+
         // audio
         this.winningSound.play();
 
@@ -564,7 +566,7 @@ class LevelMaker extends Phaser.Scene
             x: { min: 0, max: this.scale.width},
             quantity: 1,
             alpha: { start: 0.8, end: 0.1 },
-            scale: { min: 0.1, max: 0.8 },
+            scale: { min: 0.1, max: 0.6 },
             blendMode: Phaser.BlendModes.NORMAL,
             lifespan: 3500,
             gravityY: 1000,
@@ -575,7 +577,7 @@ class LevelMaker extends Phaser.Scene
             x: { min: 0, max: this.scale.width},
             quantity: 1,
             alpha: { start: 0.8, end: 0.1 },
-            scale: { min: 0.1, max: 1.5 },
+            scale: { min: 0.1, max: 1 },
             rotate: { min: 0, max: 360 },
             blendMode: Phaser.BlendModes.NORMAL,
             lifespan: 3500,
@@ -587,7 +589,7 @@ class LevelMaker extends Phaser.Scene
             x: { min: 0, max: this.scale.width},
             quantity: 1,
             alpha: { start: 0.8, end: 0.1 },
-            scale: { min: 0.1, max: 3 },
+            scale: { min: 0.1, max: 2 },
             rotate: { min: 0, max: 360 },
             blendMode: Phaser.BlendModes.NORMAL,
             lifespan: 3500,
@@ -599,7 +601,7 @@ class LevelMaker extends Phaser.Scene
             x: { min: 0, max: this.scale.width},
             quantity: 1,
             alpha: { start: 0.8, end: 0.1 },
-            scale: { min: 0.1, max: 3 },
+            scale: { min: 0.1, max: 2 },
             rotate: { min: 0, max: 360 },
             blendMode: Phaser.BlendModes.NORMAL,
             lifespan: 3500,
@@ -608,5 +610,85 @@ class LevelMaker extends Phaser.Scene
         });
 
     }
-}
 
+    // modifyUI()
+    // {
+    //     if (!this.theEnd)   // if not the end section
+    //     {
+    //         if (game.verticalOffset >= 0)       // screen size is smaller than background size
+    //         {
+    //             // game logo
+    //             Align.scaleToGameW(this.gameLogo, 0.15);
+    //             this.gameLogo.setPosition(this.gameLogoX, this.gameLogoY)
+    //
+    //             // download button
+    //             this.downloadBtn.setScale(1);
+    //             this.downloadBtn.setPosition(this.downloadBtnX, this.downloadBtnY);
+    //
+    //             // money panel set
+    //             this.moneyPanelSet.setScale(1);
+    //             this.moneyPanelSet.setPosition(0, 0);
+    //
+    //             // cat
+    //             Align.scaleToGameW(this.cat, this.catScale);
+    //             this.cat.y = this.catY;
+    //         }
+    //         else                                // screen size is bigger than background size
+    //         {
+    //             // game logo
+    //             Align.scaleToGameW(this.gameLogo, 0.12);
+    //             this.gameLogo.setPosition(200, this.gameLogoY - game.verticalOffset * 1.3 - 100)
+    //
+    //             // download button
+    //             this.downloadBtn.setScale(0.5);
+    //             this.downloadBtn.setPosition(200, this.downloadBtnY - game.verticalOffset * 1.3 + 150);
+    //
+    //             // money panel set
+    //             this.moneyPanelSet.setScale(0.5);
+    //             this.moneyPanelSet.setPosition(1350, this.downloadBtnY - game.verticalOffset * 1.3 - 500);
+    //
+    //             // cat
+    //             Align.scaleToGameW(this.cat, this.catScale / 1.5);
+    //             this.cat.y = this.catY - 100;
+    //         }
+    //     }
+    //     else    // if we are in the end section
+    //     {
+    //         if (game.verticalOffset >= 0)       // screen size is smaller than background size
+    //         {
+    //             // game logo
+    //             Align.scaleToGameW(this.gameLogo, 0.25);
+    //             this.gameLogo.y = 450;
+    //
+    //             // download button
+    //             this.downloadBtn.setScale(1.3);
+    //             this.downloadBtn.y = this.scale.height - this.downloadBtnY;
+    //
+    //             // pointer
+    //             this.pointer.x = this.downloadBtn.x + this.pointerDownloadBtnOffsetX;
+    //             this.pointer.y = this.downloadBtn.y + this.pointerDownloadBtnOffsetY;
+    //
+    //             // cat
+    //             Align.scaleToGameW(this.cat, this.catScale);
+    //         }
+    //         else                                // screen size is bigger than background size
+    //         {
+    //             // game logo
+    //             Align.scaleToGameW(this.gameLogo, 0.17);
+    //             this.gameLogo.y = this.gameLogoY - game.verticalOffset;
+    //
+    //             // download button
+    //             this.downloadBtn.setScale(1);
+    //             this.downloadBtn.y = this.downloadBtnY + game.verticalOffset + this.scale.height - 600;
+    //
+    //             // pointer
+    //             this.pointer.x = this.downloadBtn.x + this.pointerDownloadBtnOffsetX - 80;
+    //             this.pointer.y = this.downloadBtn.y + this.pointerDownloadBtnOffsetY - 40;
+    //
+    //             // cat
+    //             Align.scaleToGameW(this.cat, this.catScale / 1.5);
+    //         }
+    //     }
+    //
+    // }
+}

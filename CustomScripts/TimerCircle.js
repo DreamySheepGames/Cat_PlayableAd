@@ -26,7 +26,7 @@ class TimerCircle extends Phaser.GameObjects.Container {
 
         this.scene.tweens.add({
             targets: this,
-            scale: 1,
+            scale: 0.5,
             duration: 300,
             ease: "Back.easeOut",
         });
@@ -71,7 +71,7 @@ class TimerCircle extends Phaser.GameObjects.Container {
                     let money = new Money(this.scene, this.x, this.y, 
                                             this.onCompleteSpriteKey, this.onCompleteGlowKey, 
                                             0.1, this.onCompleteSpriteScale,
-                                            0.1, 1,
+                                            0.1, 0.5,
                                             1,
                                             this.building
                                         );
@@ -81,7 +81,7 @@ class TimerCircle extends Phaser.GameObjects.Container {
                     let money2 = new Money(this.scene, this.x, this.y, 
                                             this.onCompleteSpriteKey, this.onCompleteGlowKey, 
                                             0.1, this.onCompleteSpriteScale,
-                                            0.1, 1,
+                                            0.1, 0.5,
                                             2,
                                             this.building
                                         );
@@ -112,7 +112,7 @@ class TimerCircle extends Phaser.GameObjects.Container {
                     let money3 = new Money(this.scene, this.x, this.y, 
                                             this.onCompleteSpriteKey, this.onCompleteGlowKey, 
                                             0.1, this.onCompleteSpriteScale, 
-                                            0.1, 1, 
+                                            0.1, 0.5,
                                             4,
                                             this.building
                                         );

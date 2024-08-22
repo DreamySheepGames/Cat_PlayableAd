@@ -57,8 +57,8 @@ var config = {
     scale: {
         mode: Phaser.Scale.NONE, // Disable Phaser's built-in scaling
         autoCenter: Phaser.Scale.CENTER_VERTICALLY,
-        width: 1440 * 1.6,
-        height: 3200
+        width: 1152,
+        height: 1600
     }
 };
 
