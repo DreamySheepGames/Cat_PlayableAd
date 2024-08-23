@@ -21,7 +21,7 @@ class Hammer extends Phaser.GameObjects.Sprite {
         this.dustEmitter = this.scene.add.particles(x + 200, y + 50, "dust", {
             lifespan: 800,
             speed: { min: 250, max: 650 },
-            scale: { min: 0.6, max: 1 },
+            scale: { min: 0.25, max: 0.5 },
             alpha: { start: 0.7, end: 0.2 },
             blendMode: Phaser.BlendModes.NORMAL,
             emitting: false

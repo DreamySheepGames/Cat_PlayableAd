@@ -357,6 +357,7 @@ class LevelMaker extends Phaser.Scene
                 this.speechBubble1Text.setOrigin(0.5, 0.5);
                 this.speechBubble1.add(this.speechBubble1Sprite);
                 this.speechBubble1.add(this.speechBubble1Text);
+                this.speechBubble1.setScale(0.1);
 
                 this.uiLayer.add(this.speechBubble1);
                 this.tweens.add({
@@ -548,6 +549,7 @@ class LevelMaker extends Phaser.Scene
                 this.speechBubble2Text.setOrigin(0.5, 0.5);
                 this.speechBubble2.add(this.speechBubble2Sprite);
                 this.speechBubble2.add(this.speechBubble2Text);
+                this.speechBubble2.setScale(0.1);
 
                 this.uiLayer.add(this.speechBubble2);
                 this.tweens.add({
